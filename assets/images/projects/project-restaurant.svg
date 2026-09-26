@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="restBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e0d0c"/>
+      <stop offset="100%" stop-color="#181513"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#restBg)" />
+  <g transform="translate(60, 50)">
+    <rect width="1080" height="700" rx="16" fill="#131110" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+    <path d="M 0 16 C 0 7.16 7.16 0 16 0 L 1064 0 C 1072.84 0 1080 7.16 1080 16 L 1080 50 L 0 50 Z" fill="#1d1a17" />
+    <circle cx="30" cy="25" r="6" fill="#ef4444" opacity="0.8" />
+    <circle cx="50" cy="25" r="6" fill="#f59e0b" opacity="0.8" />
+    <circle cx="70" cy="25" r="6" fill="#10b981" opacity="0.8" />
+    <rect x="110" y="12" width="600" height="26" rx="6" fill="#0b0a09" stroke="rgba(255,255,255,0.06)" />
+    <text x="130" y="29" font-family="'Plus Jakarta Sans', monospace" font-size="12" fill="#64748b">https://manoir-roastery.kw/menu/specialty-coffee</text>
+    <g transform="translate(0, 50)">
+      <rect width="1080" height="60" fill="rgba(19,17,16,0.9)" />
+      <text x="50" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#f8fafc">MANOIR ROASTERY</text>
+      <text x="550" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#94a3b8">Interactive Menu</text>
+      <text x="680" y="36" font-family="'Tajawal', sans-serif" font-size="13" fill="#f97316">عربي (الشويخ)</text>
+      <rect x="880" y="14" width="150" height="34" rx="17" fill="#f97316" />
+      <text x="955" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Corporate Catering</text>
+
+      <g transform="translate(50, 40)">
+        <text x="0" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="38" font-weight="800" fill="#ffffff">Artisan Micro-Roastery</text>
+        <text x="0" y="130" font-family="'Plus Jakarta Sans', sans-serif" font-size="38" font-weight="800" fill="#f97316">&amp; Culinary Concept.</text>
+        <text x="0" y="170" font-family="'Tajawal', sans-serif" font-size="18" fill="#94a3b8">قهوة مختصة محمصة محلياً • قائمة طعام حية وسريعة بدون ملفات PDF ثقيلة</text>
+
+        <g transform="translate(0, 220)">
+          <!-- Item 1 -->
+          <rect x="0" y="0" width="310" height="230" rx="12" fill="#1c1917" stroke="rgba(255,255,255,0.08)" />
+          <text x="25" y="45" font-family="'Plus Jakarta Sans', sans-serif" font-size="17" font-weight="700" fill="#f8fafc">Single-Origin Pour Over</text>
+          <text x="25" y="75" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#94a3b8">Ethiopia Guji &amp; Colombia Geisha roasted weekly.</text>
+          <text x="25" y="120" font-family="'Tajawal', sans-serif" font-size="14" fill="#f97316">محاصيل فاخرة مختارة بعناية</text>
+
+          <!-- Item 2 -->
+          <rect x="330" y="0" width="310" height="230" rx="12" fill="#1c1917" stroke="rgba(255,255,255,0.08)" />
+          <text x="355" y="45" font-family="'Plus Jakarta Sans', sans-serif" font-size="17" font-weight="700" fill="#f8fafc">French Patisserie</text>
+          <text x="355" y="75" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#94a3b8">Baked fresh daily in Shuwaikh Arts Hub kitchen.</text>
+          <text x="355" y="120" font-family="'Tajawal', sans-serif" font-size="14" fill="#f97316">مخبوزات طازجة يومياً</text>
+
+          <!-- Item 3 -->
+          <rect x="660" y="0" width="320" height="230" rx="12" fill="#141210" stroke="rgba(249,115,22,0.3)" />
+          <text x="820" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="700" fill="#f97316" text-anchor="middle">EVENT &amp; CATERING INTAKE</text>
+          <text x="820" y="90" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">B2B Event Lead Funnel</text>
+          <rect x="690" y="130" width="260" height="42" rx="8" fill="#f97316" />
+          <text x="820" y="156" font-family="'Tajawal', sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">حجز خدمات البوفيه والفعاليات</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

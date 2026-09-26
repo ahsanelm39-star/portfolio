@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumina Aesthetic Clinic Case Study | White-Label Agency Fulfillment</title>
+  <meta name="description" content="How I built a high-speed bilingual landing page system and GHL calendar integration for an aesthetic clinic in Kuwait on behalf of a performance ad agency.">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#08090d',
+              surface: '#0f1219',
+              card: '#141822',
+              cardHover: '#1a202d',
+              cyan: '#38bdf8',
+              blue: '#2563eb',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            arabic: ['"IBM Plex Sans Arabic"', '"Tajawal"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body class="bg-[#08090d] text-slate-100 selection:bg-sky-500 selection:text-slate-950 font-sans relative">
+
+  <div class="ambient-glow ambient-glow-cyan w-[600px] h-[600px] -top-40 -left-40"></div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="fixed top-0 inset-x-0 z-50 glass-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="../index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-400 to-blue-600 p-[1px] shadow-lg shadow-sky-500/20">
+          <div class="w-full h-full bg-[#08090d] rounded-[11px] flex items-center justify-center font-bold text-sky-400 group-hover:text-white transition-colors">
+            A
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-extrabold tracking-tight text-white text-base sm:text-lg flex items-center gap-1.5">
+            AHMED<span class="text-sky-400">.</span>
+          </span>
+          <span class="text-[10px] uppercase font-mono tracking-widest text-slate-400">White-Label Partner</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="../index.html" class="nav-link-item hover:text-white transition-colors">Home</a>
+        <a href="../work.html" class="nav-link-item text-sky-400 font-semibold">Work</a>
+        <a href="../services.html" class="nav-link-item hover:text-white transition-colors">Services</a>
+        <a href="../about.html" class="nav-link-item hover:text-white transition-colors">About</a>
+        <a href="../contact.html" class="nav-link-item hover:text-white transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden md:flex items-center gap-4">
+        <button class="lang-toggle-btn px-3 py-1.5 rounded-full border border-white/10 hover:border-sky-400/40 bg-white/5 text-xs font-semibold text-slate-300">
+          <span class="lang-switcher-text">العربية</span>
+        </button>
+        <a href="../contact.html" class="btn-primary text-xs sm:text-sm py-2.5 px-5">
+          Discuss a Partnership
+        </a>
+      </div>
+
+      <div class="flex items-center gap-3 md:hidden">
+        <button class="lang-toggle-btn px-2.5 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-semibold text-slate-300">
+          <span class="lang-switcher-text">العربية</span>
+        </button>
+        <button id="mobile-menu-toggle" class="p-2 rounded-lg bg-white/5 border border-white/10 text-slate-300">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div id="mobile-drawer-backdrop" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden transition-opacity"></div>
+  <div id="mobile-drawer" class="fixed top-0 bottom-0 right-0 w-[85%] max-w-sm z-50 bg-[#0c0f17] border-l border-white/10 p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-white/10">
+        <span class="font-extrabold text-white text-lg">AHMED<span class="text-sky-400">.</span></span>
+        <button id="mobile-menu-close" class="p-2 rounded-lg bg-white/5 text-slate-400">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-5 pt-8 text-base font-medium">
+        <a href="../index.html" class="text-slate-300">Home</a>
+        <a href="../work.html" class="text-sky-400 font-semibold">Work</a>
+        <a href="../services.html" class="text-slate-300">Services</a>
+        <a href="../about.html" class="text-slate-300">About</a>
+        <a href="../contact.html" class="text-slate-300">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- CASE STUDY HERO -->
+  <section class="pt-36 pb-16 md:pt-44 md:pb-24 relative bg-grid-pattern border-b border-white/10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="mb-8">
+        <a href="../work.html" class="inline-flex items-center gap-2 text-xs font-mono text-slate-400 hover:text-sky-400 transition-colors">
+          <span class="rtl-flip">←</span> Back to All Projects
+        </a>
+      </div>
+
+      <div class="space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/30 text-sky-400 text-xs font-mono font-semibold">
+          <span>HEALTHCARE &amp; DERMATOLOGY</span>
+          <span>•</span>
+          <span>PAID ADS FUNNEL</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+          Lumina Aesthetic Dermatology Clinic
+        </h1>
+        <p class="text-slate-300 text-base sm:text-xl max-w-3xl leading-relaxed">
+          How I built a high-speed mobile landing system (<1.2s load) with doctor schedules and WhatsApp consultation routing for a performance marketing agency running Meta and TikTok campaigns in Kuwait.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-12 pt-8 border-t border-white/10 text-xs font-mono">
+        <div>
+          <span class="text-slate-500 block mb-1">CLIENT MARKET</span>
+          <span class="text-white font-semibold">Kuwait (Salmiya Medical Hub)</span>
+        </div>
+        <div>
+          <span class="text-slate-500 block mb-1">DELIVERY ROLE</span>
+          <span class="text-sky-400 font-semibold">White-Label Implementation</span>
+        </div>
+        <div>
+          <span class="text-slate-500 block mb-1">PLATFORM</span>
+          <span class="text-white font-semibold">GoHighLevel + Custom CSS</span>
+        </div>
+        <div>
+          <span class="text-slate-500 block mb-1">PERFORMANCE</span>
+          <span class="text-emerald-400 font-semibold">Sub-1.2s Mobile Speed</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MOCKUP DISPLAY -->
+  <section class="py-12 bg-[#090b10]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mockup-window shadow-2xl border border-white/15">
+        <div class="mockup-window-header justify-between">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+            <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+          </div>
+          <span class="text-xs font-mono text-slate-400">LUMINA CLINIC • MOBILE AD LANDER</span>
+          <span class="text-xs font-mono text-emerald-400">GHL CALENDAR ACTIVE</span>
+        </div>
+        <img src="../assets/images/projects/project-medical.svg" alt="Lumina Clinic Mockup" class="w-full h-auto">
+      </div>
+    </div>
+  </section>
+
+  <!-- EDITORIAL BREAKDOWN -->
+  <section class="py-20 bg-[#08090d]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      
+      <div class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white flex items-center gap-3">
+          <span class="text-sky-400 font-mono text-lg">[01]</span> The Paid Ads Bottleneck
+        </h2>
+        <div class="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+          <p>
+            An agency running substantial ad spend on Snapchat, TikTok, and Instagram was generating heavy clicks for a high-end cosmetic clinic in Salmiya. However, the cost per acquired consultation lead was skyrocketing due to high bounce rates on the clinic's old, slow website.
+          </p>
+          <p>
+            The agency needed dedicated treatment landers built directly inside their client's GoHighLevel sub-account that loaded in under 1.5 seconds on cellular networks and made booking an appointment as effortless as possible.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white flex items-center gap-3">
+          <span class="text-sky-400 font-mono text-lg">[02]</span> Mobile-First Aesthetic Psychology
+        </h2>
+        <div class="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+          <p>
+            I engineered the funnels with a strong focus on Gulf clinical aesthetics:
+          </p>
+          <ul class="space-y-3 pl-4 border-l-2 border-sky-400/30 text-slate-300">
+            <li><strong>Verified Doctor Profiles:</strong> Prominent clinical board certifications (European Board / Kuwait MOH licenses) displayed directly beside treatment details to eliminate skepticism.</li>
+            <li><strong>Sticky Mobile Action Bar:</strong> High-converting dual CTA bar permanently docked at the bottom of mobile screens: one tap to WhatsApp consultation, one tap to select a calendar slot.</li>
+            <li><strong>Lightweight Code Architecture:</strong> Zero heavy JavaScript carousels; optimized SVGs and lightweight CSS tabs that kept initial asset weight under 650KB.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white flex items-center gap-3">
+          <span class="text-sky-400 font-mono text-lg">[03]</span> The Hand-Off
+        </h2>
+        <div class="space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
+          <p>
+            The funnels and GoHighLevel calendar booking workflows were built, tested, and delivered within 4 business days. The agency was able to route their live ad traffic seamlessly without altering their campaign delivery schedule.
+          </p>
+        </div>
+      </div>
+
+      <div class="pt-12 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <a href="../work/automotive-service.html" class="flex items-center gap-3 group text-left">
+          <div class="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 group-hover:border-sky-400/50 group-hover:text-sky-400 transition-colors">
+            <span class="rtl-flip">←</span>
+          </div>
+          <div>
+            <span class="text-xs text-slate-500 block font-mono">PREVIOUS CASE STUDY</span>
+            <span class="text-sm font-bold text-white group-hover:text-sky-400 transition-colors">Apex Performance Detailing</span>
+          </div>
+        </a>
+
+        <a href="../contact.html" class="btn-primary text-xs sm:text-sm py-2.5 px-6">
+          Discuss a Healthcare Funnel
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#050608] border-t border-white/10 py-16 text-slate-400 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-500">
+      &copy; <span class="current-year">2026</span> Ahmed. White-Label Website Fulfillment Partner.
+    </div>
+  </footer>
+
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/data.js"></script>
+  <script src="../assets/js/i18n.js"></script>
+  <script src="../assets/js/animations.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

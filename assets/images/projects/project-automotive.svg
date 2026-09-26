@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="autoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0e14"/>
+      <stop offset="100%" stop-color="#141923"/>
+    </linearGradient>
+    <linearGradient id="cyanLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="800" fill="url(#autoBg)" />
+
+  <!-- Background Ambience -->
+  <circle cx="1000" cy="150" r="220" fill="#0284c7" opacity="0.12" filter="url(#softGlow)" />
+  <circle cx="200" cy="700" r="180" fill="#38bdf8" opacity="0.08" filter="url(#softGlow)" />
+
+  <!-- Browser Window Wrapper -->
+  <g transform="translate(60, 50)">
+    <!-- Window Frame -->
+    <rect width="1080" height="700" rx="16" fill="#0d111a" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+    
+    <!-- Browser Top Bar -->
+    <path d="M 0 16 C 0 7.16 7.16 0 16 0 L 1064 0 C 1072.84 0 1080 7.16 1080 16 L 1080 50 L 0 50 Z" fill="#141923" />
+    <circle cx="30" cy="25" r="6" fill="#ef4444" opacity="0.8" />
+    <circle cx="50" cy="25" r="6" fill="#f59e0b" opacity="0.8" />
+    <circle cx="70" cy="25" r="6" fill="#10b981" opacity="0.8" />
+    
+    <!-- URL Bar -->
+    <rect x="110" y="12" width="600" height="26" rx="6" fill="#090c12" stroke="rgba(255,255,255,0.06)" />
+    <text x="130" y="29" font-family="'Plus Jakarta Sans', monospace" font-size="12" fill="#64748b">https://apex-performance.kw/en/detailing</text>
+    
+    <!-- Language & GHL Pill -->
+    <rect x="910" y="13" width="140" height="24" rx="12" fill="rgba(56,189,248,0.12)" stroke="#38bdf8" stroke-width="0.8" />
+    <text x="980" y="29" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#38bdf8" text-anchor="middle">GHL SUB-ACCOUNT</text>
+
+    <!-- WEBSITE CONTENT MOCKUP -->
+    <g transform="translate(0, 50)">
+      <!-- Nav Header inside Web Mockup -->
+      <rect width="1080" height="60" fill="rgba(13,17,26,0.9)" />
+      <line x1="0" y1="60" x2="1080" y2="60" stroke="rgba(255,255,255,0.06)" />
+      
+      <!-- Brand Logo -->
+      <text x="50" y="38" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#f8fafc" letter-spacing="1.5">APEX PERFORMANCE</text>
+      
+      <!-- Navigation Links -->
+      <text x="400" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#94a3b8">Services</text>
+      <text x="490" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#94a3b8">PPF &amp; Ceramic</text>
+      <text x="610" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#94a3b8">Shuwaikh Facility</text>
+      <text x="750" y="36" font-family="'Tajawal', sans-serif" font-size="13" fill="#38bdf8">العربية (RTL)</text>
+
+      <!-- CTA in nav -->
+      <rect x="890" y="14" width="140" height="34" rx="17" fill="#38bdf8" />
+      <text x="960" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" fill="#090c12" text-anchor="middle">Book Detailing</text>
+
+      <!-- Hero Section -->
+      <g transform="translate(50, 40)">
+        <!-- Tag -->
+        <rect x="0" y="30" width="220" height="28" rx="14" fill="rgba(56,189,248,0.1)" stroke="rgba(56,189,248,0.3)" />
+        <text x="110" y="49" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600" fill="#38bdf8" text-anchor="middle">KUWAIT'S ELITE DETAILING STUDIO</text>
+
+        <!-- Main Headline -->
+        <text x="0" y="110" font-family="'Plus Jakarta Sans', sans-serif" font-size="44" font-weight="800" fill="#ffffff" letter-spacing="-0.5">Protect Your Exotic Investment.</text>
+        <text x="0" y="155" font-family="'Plus Jakarta Sans', sans-serif" font-size="44" font-weight="800" fill="#38bdf8" letter-spacing="-0.5">Precision PPF &amp; Thermal Tinting.</text>
+
+        <!-- Arabic Sub-line preview -->
+        <text x="0" y="195" font-family="'Tajawal', sans-serif" font-size="18" fill="#94a3b8">حماية متقدمة لطلاء السيارات الفارهة • ضمان 10 سنوات • منطقة الشويخ الصناعية</text>
+
+        <!-- Buttons -->
+        <rect x="0" y="230" width="180" height="46" rx="8" fill="#2563eb" />
+        <text x="90" y="259" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">Instant WhatsApp Quote</text>
+
+        <rect x="200" y="230" width="150" height="46" rx="8" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" />
+        <text x="275" y="259" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="600" fill="#e2e8f0" text-anchor="middle">View Packages</text>
+
+        <!-- 3 Feature Cards inside mockup -->
+        <g transform="translate(0, 310)">
+          <!-- Card 1 -->
+          <rect x="0" y="0" width="310" height="180" rx="12" fill="#141923" stroke="rgba(255,255,255,0.08)" />
+          <circle cx="35" cy="35" r="16" fill="rgba(56,189,248,0.15)" />
+          <text x="35" y="40" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" fill="#38bdf8" text-anchor="middle">★</text>
+          <text x="25" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-size="17" font-weight="700" fill="#f8fafc">Self-Healing PPF</text>
+          <text x="25" y="110" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#94a3b8">Full body stone chip protection with 8mil hydrophobic topcoat.</text>
+          <text x="25" y="150" font-family="'Tajawal', sans-serif" font-size="12" fill="#38bdf8">حماية كاملة من الحصى والخدوش</text>
+
+          <!-- Card 2 -->
+          <rect x="330" y="0" width="310" height="180" rx="12" fill="#141923" stroke="rgba(255,255,255,0.08)" />
+          <circle cx="365" cy="35" r="16" fill="rgba(59,130,246,0.15)" />
+          <text x="365" y="40" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" fill="#60a5fa" text-anchor="middle">⚡</text>
+          <text x="355" y="80" font-family="'Plus Jakarta Sans', sans-serif" font-size="17" font-weight="700" fill="#f8fafc">Ceramic Graphene</text>
+          <text x="355" y="110" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#94a3b8">9H hardness protection designed to withstand Kuwait summer heat.</text>
+          <text x="355" y="150" font-family="'Tajawal', sans-serif" font-size="12" fill="#60a5fa">عزل حراري ولمعان فائق الصمود</text>
+
+          <!-- Card 3 (Vehicle Preview Box) -->
+          <rect x="660" y="0" width="320" height="180" rx="12" fill="url(#cyanLine)" opacity="0.15" />
+          <rect x="660" y="0" width="320" height="180" rx="12" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6 4" />
+          <text x="820" y="75" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="700" fill="#38bdf8" text-anchor="middle">LIVE GHL FUNNEL</text>
+          <text x="820" y="105" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Shuwaikh Client Intake Webhook</text>
+          <rect x="730" y="125" width="180" height="32" rx="16" fill="#10b981" />
+          <text x="820" y="146" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#090c12" text-anchor="middle">✓ WHATSAPP ROUTING ACTIVE</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

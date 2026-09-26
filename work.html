@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Fulfillment Portfolio &amp; Case Studies | Ahmed</title>
+    <meta name="description" content="Explore real business websites and GoHighLevel funnels delivered behind the scenes for marketing agencies in Kuwait and the GCC.">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Agency Fulfillment Portfolio &amp; Case Studies | Ahmed">
+    <meta property="og:description" content="Explore real business websites and GoHighLevel funnels delivered behind the scenes for marketing agencies in Kuwait and the GCC.">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#08090d',
+                            surface: '#0f1219',
+                            card: '#141822',
+                            cardHover: '#1a202d',
+                            cyan: '#38bdf8',
+                            blue: '#2563eb',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        arabic: ['"IBM Plex Sans Arabic"', '"Tajawal"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="bg-[#08090d] text-slate-100 selection:bg-sky-500 selection:text-slate-950 font-sans relative">
+
+    <!-- Ambient Glow Backgrounds -->
+    <div class="ambient-glow ambient-glow-cyan w-[600px] h-[600px] -top-40 -right-40"></div>
+    <div class="ambient-glow ambient-glow-indigo w-[500px] h-[500px] top-[50%] -left-40"></div>
+
+    <!-- NAVIGATION HEADER -->
+    <header class="fixed top-0 inset-x-0 z-50 glass-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-400 to-blue-600 p-[1px] shadow-lg shadow-sky-500/20">
+                    <div class="w-full h-full bg-[#08090d] rounded-[11px] flex items-center justify-center font-bold text-sky-400 group-hover:text-white transition-colors">
+                        A
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-extrabold tracking-tight text-white text-base sm:text-lg flex items-center gap-1.5">
+            AHMED<span class="text-sky-400">.</span>
+                    </span>
+                    <span class="text-[10px] uppercase font-mono tracking-widest text-slate-400" data-i18n="badgeWhiteLabel">
+            100% White-Label Partner
+          </span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="index.html" class="nav-link-item hover:text-white transition-colors" data-i18n="navHome">Home</a>
+                <a href="work.html" class="nav-link-item text-sky-400 font-semibold" data-i18n="navWork">Work</a>
+                <a href="services.html" class="nav-link-item hover:text-white transition-colors" data-i18n="navServices">Services</a>
+                <a href="about.html" class="nav-link-item hover:text-white transition-colors" data-i18n="navAbout">About</a>
+                <a href="contact.html" class="nav-link-item hover:text-white transition-colors" data-i18n="navContact">Contact</a>
+            </nav>
+
+            <!-- Desktop Actions -->
+            <div class="hidden md:flex items-center gap-4">
+                <!-- <button class="lang-toggle-btn px-3 py-1.5 rounded-full border border-white/10 hover:border-sky-400/40 bg-white/5 hover:bg-white/10 text-xs font-semibold text-slate-300 hover:text-white transition-all flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 text-sky-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+          </svg>
+          <span class="lang-switcher-text">العربية</span>
+        </button> -->
+
+                <a href="contact.html" class="btn-primary text-xs sm:text-sm py-2.5 px-5" data-i18n="navCta">
+          Discuss a Partnership
+        </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <div class="flex items-center gap-3 md:hidden">
+                <!-- <button class="lang-toggle-btn px-2.5 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-semibold text-slate-300">
+          <span class="lang-switcher-text">العربية</span>
+        </button> -->
+                <button id="mobile-menu-toggle" class="p-2 rounded-lg bg-white/5 border border-white/10 text-slate-300 hover:text-white">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div id="mobile-drawer-backdrop" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden transition-opacity"></div>
+    <div id="mobile-drawer" class="fixed top-0 bottom-0 right-0 w-[85%] max-w-sm z-50 bg-[#0c0f17] border-l border-white/10 p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div>
+            <div class="flex items-center justify-between pb-6 border-b border-white/10">
+                <span class="font-extrabold text-white text-lg">AHMED<span class="text-sky-400">.</span></span>
+                <button id="mobile-menu-close" class="p-2 rounded-lg bg-white/5 text-slate-400 hover:text-white">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+            </div>
+            <nav class="flex flex-col gap-5 pt-8 text-base font-medium">
+                <a href="index.html" class="text-slate-300 hover:text-sky-400" data-i18n="navHome">Home</a>
+                <a href="work.html" class="text-sky-400 font-semibold" data-i18n="navWork">Work</a>
+                <a href="services.html" class="text-slate-300 hover:text-sky-400" data-i18n="navServices">Services</a>
+                <a href="about.html" class="text-slate-300 hover:text-sky-400" data-i18n="navAbout">About</a>
+                <a href="contact.html" class="text-slate-300 hover:text-sky-400" data-i18n="navContact">Contact</a>
+            </nav>
+        </div>
+        <div class="pt-6 border-t border-white/10 space-y-4">
+            <!-- <button class="lang-toggle-btn w-full py-2.5 px-4 rounded-xl border border-white/10 bg-white/5 text-sm font-semibold text-slate-200 flex items-center justify-center gap-2">
+        <span class="lang-switcher-text">العربية</span>
+      </button> -->
+            <a href="contact.html" class="btn-primary w-full text-center py-3 text-sm" data-i18n="navCta">
+        Discuss a Partnership
+      </a>
+        </div>
+    </div>
+
+    <!-- WORK HERO SECTION -->
+    <section class="pt-36 pb-16 md:pt-44 md:pb-20 relative bg-grid-pattern border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl space-y-4 reveal-init">
+                <div class="inline-block text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold" data-i18n="workEyebrow">
+                    Selected Agency Fulfillment Projects
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                    Websites Built Behind the Scenes for Agencies.
+                </h1>
+                <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+                    From high-ticket automotive garages to regional GCC freight providers and aesthetic medical clinics. Every project was fulfilled under white-label terms, turning raw client requirements into polished, high-converting digital assets.
+                </p>
+            </div>
+
+            <!-- Filter Buttons Bar -->
+            <div class="mt-12 flex flex-wrap items-center gap-2.5 pt-6 border-t border-white/10 reveal-init">
+                <button class="work-filter-btn px-4 py-2 rounded-full text-xs font-bold bg-sky-400 text-slate-950 transition-all" data-filter="all" data-i18n="filterAll">
+          All Projects
+        </button>
+                <button class="work-filter-btn px-4 py-2 rounded-full text-xs font-medium bg-white/5 hover:bg-white/10 text-slate-300 transition-all" data-filter="automotive" data-i18n="filterAutomotive">
+          Automotive &amp; Services
+        </button>
+                <button class="work-filter-btn px-4 py-2 rounded-full text-xs font-medium bg-white/5 hover:bg-white/10 text-slate-300 transition-all" data-filter="services">
+          Commercial &amp; Freight
+        </button>
+                <button class="work-filter-btn px-4 py-2 rounded-full text-xs font-medium bg-white/5 hover:bg-white/10 text-slate-300 transition-all" data-filter="business" data-i18n="filterBusiness">
+          Corporate &amp; Real Estate
+        </button>
+                <button class="work-filter-btn px-4 py-2 rounded-full text-xs font-medium bg-white/5 hover:bg-white/10 text-slate-300 transition-all" data-filter="ghl" data-i18n="filterGhl">
+          GoHighLevel
+        </button>
+                <button class="work-filter-btn px-4 py-2 rounded-full text-xs font-medium bg-white/5 hover:bg-white/10 text-slate-300 transition-all" data-filter="bilingual" data-i18n="filterBilingual">
+          Arabic / English
+        </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS GALLERY GRID -->
+    <section class="py-20 bg-[#08090d]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- CARD 1: Automotive -->
+                <div class="project-grid-card glass-card rounded-2xl overflow-hidden group flex flex-col justify-between reveal-init" data-category="automotive" data-tags="ghl bilingual kuwait automotive">
+                    <div>
+                        <div class="relative overflow-hidden aspect-[16/10] bg-[#111622] border-b border-white/5">
+                            <img src="assets/images/projects/project-automotive.svg" alt="Apex Performance Automotive Detailing Portal" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 start-4 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/10 text-[11px] font-mono text-sky-400">
+                                GoHighLevel • Kuwait
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <div class="flex items-center justify-between text-xs text-slate-400">
+                                <span>Automotive &amp; Luxury Care</span>
+                                <span class="text-sky-400 font-mono">Bilingual RTL/LTR</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-sky-400 transition-colors">
+                                Apex Performance &amp; Auto Detailing
+                            </h3>
+                            <p class="text-xs sm:text-sm text-slate-400 line-clamp-3">
+                                Built behind the scenes for a Kuwait marketing agency managing a high-end garage. Converted raw WhatsApp briefs and service lists into an elite bilingual booking portal.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 pt-2">
+                                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-slate-300">Custom CSS</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-slate-300">WhatsApp Routing</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-slate-300">Shuwaikh Hub</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <a href="work/automotive-service.html" class="btn-secondary w-full text-xs py-2.5 flex items-center justify-center gap-1.5 group/link">
+                            <span data-i18n="viewCaseStudy">View Case Study</span>
+                            <span class="group-hover/link:translate-x-1 rtl:group-hover/link:-translate-x-1 transition-transform rtl-flip">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 2: Logistics -->
+                <div class="project-grid-card glass-card rounded-2xl overflow-hidden group flex flex-col justify-between reveal-init" data-category="services" data-tags="corporate b2b logistics bilingual ghl gcc">
+                    <div>
+                        <div class="relative overflow-hidden aspect-[16/10] bg-[#111622] border-b border-white/5">
+                            <img src="assets/images/projects/project-logistics.svg" alt="Gulf Horizon Logistics Corporate Website" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 start-4 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/10 text-[11px] font-mono text-sky-400">
+                                Corporate • GCC Routes
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <div class="flex items-center justify-between text-xs text-slate-400">
+                                <span>Commercial Freight &amp; 3PL</span>
+                                <span class="text-sky-400 font-mono">Bilingual RTL/LTR</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-sky-400 transition-colors">
+                                Gulf Horizon Cargo &amp; Marine Freight
+                            </h3>
+                            <p class="text-xs sm:text-sm text-slate-400 line-clamp-3">
+                                Delivered for a B2B agency needing a heavy-duty corporate site for a regional logistics provider. Features interactive RFQ quotation flows and container metrics.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 pt-2">
+                                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-slate-300">RFQ Lead Funnel</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-slate-300">Cold Chain Specs</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-slate-300">KSA &amp; Kuwait</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <a href="work/logistics-group.html" class="btn-secondary w-full text-xs py-2.5 flex items-center justify-center gap-1.5 group/link">
+                            <span data-i18n="viewCaseStudy">View Case Study</span>
+                            <span class="group-hover/link:translate-x-1 rtl:group-hover/link:-translate-x-1 transition-transform rtl-flip">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 3: Medical -->
+                <div class="project-grid-card glass-card rounded-2xl overflow-hidden group flex flex-col justify-between reveal-init" data-category="services" data-tags="healthcare medical clinic ghl bilingual kuwait">
+                    <div>
+                        <div class="relative overflow-hidden aspect-[16/10] bg-[#111622] border-b border-white/5">
+                            <img src="assets/images/projects/project-medical.svg" alt="Lumina Aesthetic Dermatology Clinic" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 start-4 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/10 text-[11px] font-mono text-sky-400">
+                                GoHighLevel • Salmiya
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <div class="flex items-center justify-between text-xs text-slate-400">
+                                <span>Aesthetic Dermatology</span>
+                                <span class="text-sky-400 font-mono">Bilingual RTL/LTR</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-sky-400 transition-colors">
+                                Lumina Aesthetic Dermatology Clinic
+                            </h3>
+                            <p class="text-xs sm:text-sm text-slate-400 line-clamp-3">
+                                Engineered for an agency driving paid Meta &amp; TikTok traffic. Ultra-fast mobile loading (
+                                <1.2s), intuitive doctor schedules, and high-trust clinical aesthetic. </p>
+                                    <div class="flex flex-wrap gap-1.5 pt-2">
+                                        <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-slate-300">Paid Ads Lander</span>
+                                        <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-slate-300">GHL Calendar</span>
+                                        <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-slate-300">Mobile Fast</span>
+                                    </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <a href="work/medical-center.html" class="btn-secondary w-full text-xs py-2.5 flex items-center justify-center gap-1.5 group/link">
+                            <span data-i18n="viewCaseStudy">View Case Study</span>
+                            <span class="group-hover/link:translate-x-1 rtl:group-hover/link:-translate-x-1 transition-transform rtl-flip">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 4: Real Estate -->
+                <div class="project-grid-card glass-card rounded-2xl overflow-hidden group flex flex-col justify-between reveal-init" data-category="business" data-tags="realestate commercial ghl bilingual kuwait">
+                    <div>
+                        <div class="relative overflow-hidden aspect-[16/10] bg-[#111622] border-b border-white/5">
+                            <img src="assets/images/projects/project-realestate.svg" alt="Al-Dar Prestige Commercial Realty" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 start-4 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/10 text-[11px] font-mono text-sky-400">
+                                GoHighLevel • Capital
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <div class="flex items-center justify-between text-xs text-slate-400">
+                                <span>Commercial Real Estate</span>
+                                <span class="text-sky-400 font-mono">Bilingual RTL/LTR</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-sky-400 transition-colors">
+                                Al-Dar Prestige Commercial Realty
+                            </h3>
+                            <p class="text-xs sm:text-sm text-slate-400 line-clamp-3">
+                                A high-conversion multi-property portfolio site enabling Kuwait investors to review floorplans, ROI projections, and schedule private viewings directly with agents.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 pt-2">
+                                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-slate-300">Broker Routing</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-slate-300">Floorplan Modal</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-slate-300">Kuwait City</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <a href="work/real-estate-group.html" class="btn-secondary w-full text-xs py-2.5 flex items-center justify-center gap-1.5 group/link">
+                            <span data-i18n="viewCaseStudy">View Case Study</span>
+                            <span class="group-hover/link:translate-x-1 rtl:group-hover/link:-translate-x-1 transition-transform rtl-flip">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 5: Legal -->
+                <div class="project-grid-card glass-card rounded-2xl overflow-hidden group flex flex-col justify-between reveal-init" data-category="business" data-tags="legal corporate advisory bilingual high-trust">
+                    <div>
+                        <div class="relative overflow-hidden aspect-[16/10] bg-[#111622] border-b border-white/5">
+                            <img src="assets/images/projects/project-legal.svg" alt="Sovereign Legal & Corporate Advisors" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 start-4 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/10 text-[11px] font-mono text-amber-400">
+                                Corporate Law • Kuwait
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <div class="flex items-center justify-between text-xs text-slate-400">
+                                <span>Corporate Law &amp; M&amp;A</span>
+                                <span class="text-amber-400 font-mono">Bilingual RTL/LTR</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">
+                                Sovereign Legal &amp; Corporate Advisors
+                            </h3>
+                            <p class="text-xs sm:text-sm text-slate-400 line-clamp-3">
+                                High-trust, ultra-refined bilingual website for a commercial law firm handling corporate mergers, KDIPA licensing, and commercial litigation in Kuwait.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 pt-2">
+                                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-slate-300">Discreet Intake</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-slate-300">Practice Directory</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-slate-300">High Trust UI</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <a href="work/legal-consultancy.html" class="btn-secondary w-full text-xs py-2.5 flex items-center justify-center gap-1.5 group/link">
+                            <span data-i18n="viewCaseStudy">View Case Study</span>
+                            <span class="group-hover/link:translate-x-1 rtl:group-hover/link:-translate-x-1 transition-transform rtl-flip">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 6: Hospitality -->
+                <div class="project-grid-card glass-card rounded-2xl overflow-hidden group flex flex-col justify-between reveal-init" data-category="business" data-tags="hospitality restaurant mobile-first ghl bilingual">
+                    <div>
+                        <div class="relative overflow-hidden aspect-[16/10] bg-[#111622] border-b border-white/5">
+                            <img src="assets/images/projects/project-restaurant.svg" alt="Manoir Culinary Concept & Specialty Roastery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 start-4 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/10 text-[11px] font-mono text-orange-400">
+                                Hospitality • Shuwaikh
+                            </div>
+                        </div>
+                        <div class="p-6 space-y-3">
+                            <div class="flex items-center justify-between text-xs text-slate-400">
+                                <span>Culinary &amp; Specialty Roastery</span>
+                                <span class="text-orange-400 font-mono">Bilingual RTL/LTR</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-orange-400 transition-colors">
+                                Manoir Culinary &amp; Roastery Concept
+                            </h3>
+                            <p class="text-xs sm:text-sm text-slate-400 line-clamp-3">
+                                Visual storytelling and interactive mobile menu system for a premier Kuwait hospitality brand. Built with high-speed asset loading and catering inquiry flows.
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 pt-2">
+                                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-slate-300">Interactive Menu</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-slate-300">Event Catering Funnel</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-white/5 text-slate-300">No Slow PDFs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2">
+                        <a href="work/artisan-hospitality.html" class="btn-secondary w-full text-xs py-2.5 flex items-center justify-center gap-1.5 group/link">
+                            <span data-i18n="viewCaseStudy">View Case Study</span>
+                            <span class="group-hover/link:translate-x-1 rtl:group-hover/link:-translate-x-1 transition-transform rtl-flip">→</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WORK CLOSING CTA -->
+    <section class="py-20 bg-[#0c0f17] border-t border-white/10 text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white">
+                Have an Upcoming Client Build in Your Agency's Queue?
+            </h3>
+            <p class="text-slate-400 text-sm max-w-xl mx-auto">
+                Send over the brief or let's connect on WhatsApp to review requirements and set up a private fulfillment staging preview.
+            </p>
+            <div class="flex items-center justify-center gap-4 pt-2">
+                <a href="contact.html" class="btn-primary text-sm py-3 px-7" data-i18n="navCta">
+          Discuss a Partnership
+        </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#050608] border-t border-white/10 py-16 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+                <div class="md:col-span-5 space-y-4">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <span class="text-xl font-extrabold text-white">AHMED<span class="text-sky-400">.</span></span>
+                    </a>
+                    <p class="text-xs sm:text-sm text-slate-400 max-w-sm leading-relaxed" data-i18n="footerDesc">
+                        White-label website design and GoHighLevel fulfillment specialist partnering with digital marketing agencies across Kuwait, the GCC, and internationally.
+                    </p>
+                </div>
+                <div class="md:col-span-2 space-y-3">
+                    <h4 class="text-xs font-mono uppercase tracking-wider text-slate-200 font-semibold" data-i18n="footerQuickLinks">
+                        Navigation
+                    </h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="index.html" class="hover:text-white transition-colors" data-i18n="navHome">Home</a></li>
+                        <li><a href="work.html" class="hover:text-white transition-colors" data-i18n="navWork">Work</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors" data-i18n="navServices">Services</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors" data-i18n="navAbout">About</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors" data-i18n="navContact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-3 space-y-3">
+                    <h4 class="text-xs font-mono uppercase tracking-wider text-slate-200 font-semibold" data-i18n="footerServices">
+                        Core Services
+                    </h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="services.html" class="hover:text-white transition-colors">White-Label Fulfillment</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors">GoHighLevel Websites &amp; Funnels</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors">Arabic (RTL) &amp; English Parity</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors">Custom CSS &amp; Mobile Polish</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-2 space-y-3">
+                    <h4 class="text-xs font-mono uppercase tracking-wider text-slate-200 font-semibold" data-i18n="footerDirectContact">
+                        Direct Inquiries
+                    </h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a target="_blank" href="https://wa.me/201097926288" class="cfg-whatsapp-link hover:text-sky-400 transition-colors">WhatsApp</a></li>
+                        <li>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ah.dev.3@gmail.com" target="_blank" rel="noopener noreferrer" class="cfg-email-link hover:text-sky-400 transition-colors">Email</a>
+                        </li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/ahmed-work-843909439/?isSelfProfile=true" class="cfg-linkedin-link hover:text-sky-400 transition-colors">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+                <div>
+                    &copy; <span class="current-year">2026</span> <span data-i18n="footerCopyright">All rights reserved. White-Label Fulfillment Specialist.</span>
+                </div>
+                <div data-i18n="footerLegalNote">
+                    All client projects delivered under strict agency white-label agreements.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

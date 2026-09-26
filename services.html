@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Fulfillment Services &amp; Capabilities | Ahmed</title>
+    <meta name="description" content="White-label website design, GoHighLevel development, and bilingual Arabic/English web fulfillment for marketing agencies.">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Agency Fulfillment Services &amp; Capabilities | Ahmed">
+    <meta property="og:description" content="White-label website design, GoHighLevel development, and bilingual Arabic/English web fulfillment for marketing agencies.">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#08090d',
+                            surface: '#0f1219',
+                            card: '#141822',
+                            cardHover: '#1a202d',
+                            cyan: '#38bdf8',
+                            blue: '#2563eb',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        arabic: ['"IBM Plex Sans Arabic"', '"Tajawal"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="bg-[#08090d] text-slate-100 selection:bg-sky-500 selection:text-slate-950 font-sans relative">
+
+    <!-- Ambient Glow Backgrounds -->
+    <div class="ambient-glow ambient-glow-cyan w-[600px] h-[600px] -top-40 -left-40"></div>
+    <div class="ambient-glow ambient-glow-indigo w-[500px] h-[500px] top-[40%] -right-40"></div>
+
+    <!-- NAVIGATION HEADER -->
+    <header class="fixed top-0 inset-x-0 z-50 glass-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+
+            <!-- Brand Logo -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-400 to-blue-600 p-[1px] shadow-lg shadow-sky-500/20">
+                    <div class="w-full h-full bg-[#08090d] rounded-[11px] flex items-center justify-center font-bold text-sky-400 group-hover:text-white transition-colors">
+                        A
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-extrabold tracking-tight text-white text-base sm:text-lg flex items-center gap-1.5">
+            AHMED<span class="text-sky-400">.</span>
+                    </span>
+                    <span class="text-[10px] uppercase font-mono tracking-widest text-slate-400" data-i18n="badgeWhiteLabel">
+            100% White-Label Partner
+          </span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="index.html" class="nav-link-item hover:text-white transition-colors" data-i18n="navHome">Home</a>
+                <a href="work.html" class="nav-link-item hover:text-white transition-colors" data-i18n="navWork">Work</a>
+                <a href="services.html" class="nav-link-item text-sky-400 font-semibold" data-i18n="navServices">Services</a>
+                <a href="about.html" class="nav-link-item hover:text-white transition-colors" data-i18n="navAbout">About</a>
+                <a href="contact.html" class="nav-link-item hover:text-white transition-colors" data-i18n="navContact">Contact</a>
+            </nav>
+
+            <!-- Desktop Actions -->
+            <div class="hidden md:flex items-center gap-4">
+                <!-- <button class="lang-toggle-btn px-3 py-1.5 rounded-full border border-white/10 hover:border-sky-400/40 bg-white/5 text-xs font-semibold text-slate-300">
+          <span class="lang-switcher-text">العربية</span>
+        </button> -->
+                <a href="contact.html" class="btn-primary text-xs sm:text-sm py-2.5 px-5" data-i18n="navCta">
+          Discuss a Partnership
+        </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <div class="flex items-center gap-3 md:hidden">
+                <!-- <button class="lang-toggle-btn px-2.5 py-1 rounded-full border border-white/10 bg-white/5 text-xs font-semibold text-slate-300">
+          <span class="lang-switcher-text">العربية</span>
+        </button> -->
+                <button id="mobile-menu-toggle" class="p-2 rounded-lg bg-white/5 border border-white/10 text-slate-300 hover:text-white">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div id="mobile-drawer-backdrop" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden transition-opacity"></div>
+    <div id="mobile-drawer" class="fixed top-0 bottom-0 right-0 w-[85%] max-w-sm z-50 bg-[#0c0f17] border-l border-white/10 p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out">
+        <div>
+            <div class="flex items-center justify-between pb-6 border-b border-white/10">
+                <span class="font-extrabold text-white text-lg">AHMED<span class="text-sky-400">.</span></span>
+                <button id="mobile-menu-close" class="p-2 rounded-lg bg-white/5 text-slate-400">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+            </div>
+            <nav class="flex flex-col gap-5 pt-8 text-base font-medium">
+                <a href="index.html" class="text-slate-300">Home</a>
+                <a href="work.html" class="text-slate-300">Work</a>
+                <a href="services.html" class="text-sky-400 font-semibold">Services</a>
+                <a href="about.html" class="text-slate-300">About</a>
+                <a href="contact.html" class="text-slate-300">Contact</a>
+            </nav>
+        </div>
+        <div class="pt-6 border-t border-white/10 space-y-4">
+            <!-- <button class="lang-toggle-btn w-full py-2.5 px-4 rounded-xl border border-white/10 bg-white/5 text-sm font-semibold text-slate-200 flex items-center justify-center gap-2">
+        <span class="lang-switcher-text">العربية</span>
+      </button> -->
+            <a href="contact.html" class="btn-primary w-full text-center py-3 text-sm" data-i18n="navCta">
+        Discuss a Partnership
+      </a>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="pt-36 pb-16 md:pt-44 md:pb-24 relative bg-grid-pattern border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl space-y-4 reveal-init">
+                <div class="inline-block text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">
+                    Fulfillment Architecture
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                    Website Capabilities Engineered for Marketing Agencies.
+                </h1>
+                <p class="text-slate-300 text-base sm:text-xl leading-relaxed">
+                    Plug a reliable, senior website fulfillment layer directly into your agency. Zero client interference, predictable project turnaround, and native GoHighLevel + Arabic RTL expertise.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAILED SERVICES LIST -->
+    <section class="py-24 bg-[#08090d]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+
+            <!-- SERVICE 1: White-Label Fulfillment -->
+            <div class="glass-card p-8 md:p-12 rounded-3xl border border-sky-400/30 reveal-init" id="white-label">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    <div class="lg:col-span-4 space-y-3">
+                        <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/30">
+              CORE AGENCY MODEL
+            </span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">White-Label Website Fulfillment</h2>
+                        <p class="text-xs sm:text-sm text-slate-400 font-mono">Behind-The-Scenes Subcontracting</p>
+                    </div>
+                    <div class="lg:col-span-8 space-y-6 text-sm text-slate-300">
+                        <p class="text-base text-slate-200 leading-relaxed">
+                            You sell the website, own the client relationship, and bill them under your agency. I receive the raw brief, design the site, build the pages, and deliver a clean staging link ready for your review. No client poaching, zero brand interference, and complete
+                            confidentiality.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                            <div class="p-4 bg-white/5 rounded-xl border border-white/5">
+                                <span class="text-xs font-mono text-sky-400 block mb-1">WHAT YOUR AGENCY RECEIVES:</span>
+                                <ul class="text-xs space-y-1.5 text-slate-300">
+                                    <li>• Turnkey staging website ready for client presentation</li>
+                                    <li>• Complete documentation and asset pack</li>
+                                    <li>• Polished revision cycles aligned with your schedule</li>
+                                    <li>• Strict non-disclosure &amp; non-circumvention</li>
+                                </ul>
+                            </div>
+                            <div class="p-4 bg-white/5 rounded-xl border border-white/5">
+                                <span class="text-xs font-mono text-sky-400 block mb-1">WHAT I NEED FROM YOU:</span>
+                                <ul class="text-xs space-y-1.5 text-slate-300">
+                                    <li>• Client branding, logo &amp; color preference</li>
+                                    <li>• Raw service/product breakdown</li>
+                                    <li>• Target market/niche notes</li>
+                                    <li>• Platform or builder access</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 pt-2 text-xs font-mono text-slate-400">
+                            <span>Typical Turnaround: 3–7 Business Days</span>
+                            <span>•</span>
+                            <span class="text-emerald-400">100% Agency Protected</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE 2: GoHighLevel (GHL) Build -->
+            <div class="glass-card p-8 md:p-12 rounded-3xl border border-white/10 reveal-init" id="ghl-builds">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    <div class="lg:col-span-4 space-y-3">
+                        <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/30">
+              GHL SPECIALIST
+            </span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">GoHighLevel Website &amp; Funnels</h2>
+                        <p class="text-xs sm:text-sm text-slate-400 font-mono">Native Sub-Account Execution</p>
+                    </div>
+                    <div class="lg:col-span-8 space-y-6 text-sm text-slate-300">
+                        <p class="text-base text-slate-200 leading-relaxed">
+                            Most agency GHL builds look like cheap, copied templates that damage credibility. I use deep platform knowledge combined with custom CSS injection to build bespoke, responsive websites and high-converting funnels directly inside your agency's client sub-accounts.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                            <div class="p-4 bg-white/5 rounded-xl border border-white/5">
+                                <span class="text-xs font-mono text-blue-400 block mb-1">CAPABILITIES DELIVERED:</span>
+                                <ul class="text-xs space-y-1.5 text-slate-300">
+                                    <li>• Full site built natively inside client GHL sub-account</li>
+                                    <li>• Custom CSS for luxury glass cards and hover states</li>
+                                    <li>• Lead forms, booking calendars, and surveys wired up</li>
+                                    <li>• 100% mobile responsive polish across iOS &amp; Android</li>
+                                </ul>
+                            </div>
+                            <div class="p-4 bg-white/5 rounded-xl border border-white/5">
+                                <span class="text-xs font-mono text-blue-400 block mb-1">BEST SUITED FOR:</span>
+                                <ul class="text-xs space-y-1.5 text-slate-300">
+                                    <li>• GHL agencies selling SaaS + fulfillment retainers</li>
+                                    <li>• Lead gen agencies running paid advertising</li>
+                                    <li>• Local businesses needing integrated CRM intake</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE 3: Bilingual Arabic (RTL) & English -->
+            <div class="glass-card p-8 md:p-12 rounded-3xl border border-white/10 reveal-init" id="bilingual">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    <div class="lg:col-span-4 space-y-3">
+                        <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
+              GCC STANDARD
+            </span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Bilingual Arabic (RTL) &amp; English</h2>
+                        <p class="text-xs sm:text-sm text-slate-400 font-mono">True Layout Direction &amp; Parity</p>
+                    </div>
+                    <div class="lg:col-span-8 space-y-6 text-sm text-slate-300">
+                        <p class="text-base text-slate-200 leading-relaxed">
+                            Building websites in Kuwait and the GCC requires genuine understanding of Arabic UI. I don't just reverse text alignment; I architect proper RTL flexbox and grid layouts, select modern Arabic typography, mirror directional icons, and ensure both language
+                            versions look equally prestigious.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                            <div class="p-4 bg-white/5 rounded-xl border border-white/5">
+                                <span class="text-xs font-mono text-emerald-400 block mb-1">RTL DELIVERABLES:</span>
+                                <ul class="text-xs space-y-1.5 text-slate-300">
+                                    <li>• Proper [dir="rtl"] flex/grid container mirroring</li>
+                                    <li>• Modern Arabic fonts (IBM Plex Sans Arabic, Tajawal)</li>
+                                    <li>• Flipped navigation chevrons, icons, and CTA placements</li>
+                                    <li>• Natural commercial Arabic phrasing, not machine translation</li>
+                                </ul>
+                            </div>
+                            <div class="p-4 bg-white/5 rounded-xl border border-white/5">
+                                <span class="text-xs font-mono text-emerald-400 block mb-1">WHY AGENCIES CARE:</span>
+                                <ul class="text-xs space-y-1.5 text-slate-300">
+                                    <li>• Eliminates broken layouts on Arabic client reviews</li>
+                                    <li>• Meets the expectations of high-ticket GCC clients</li>
+                                    <li>• Saves days of painful manual CSS fixing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE 4: Local Business Websites -->
+            <div class="glass-card p-8 md:p-12 rounded-3xl border border-white/10 reveal-init" id="local-business">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    <div class="lg:col-span-4 space-y-3">
+                        <span class="px-3 py-1 rounded-full text-xs font-mono font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/30">
+              TURNKEY INFORMATIONAL
+            </span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Local Business &amp; Corporate Sites</h2>
+                        <p class="text-xs sm:text-sm text-slate-400 font-mono">Service Clarity &amp; Lead Intake</p>
+                    </div>
+                    <div class="lg:col-span-8 space-y-6 text-sm text-slate-300">
+                        <p class="text-base text-slate-200 leading-relaxed">
+                            Designed specifically for service businesses, contracting, automotive workshops, medical practices, law firms, and commercial facilities in Kuwait and the Gulf. Clear value propositions, structured service breakdown cards, and friction-free contact pathways.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                            <div class="p-4 bg-white/5 rounded-xl border border-white/5">
+                                <span class="text-xs font-mono text-sky-400 block mb-1">KEY SECTIONS DELIVERED:</span>
+                                <ul class="text-xs space-y-1.5 text-slate-300">
+                                    <li>• High-impact hero with local trust badges</li>
+                                    <li>• Categorized service cards with inquiry hooks</li>
+                                    <li>• Facility / showroom / team credibility sections</li>
+                                    <li>• Google Maps location, opening hours &amp; WhatsApp</li>
+                                </ul>
+                            </div>
+                            <div class="p-4 bg-white/5 rounded-xl border border-white/5">
+                                <span class="text-xs font-mono text-sky-400 block mb-1">INDUSTRIES COVERED:</span>
+                                <ul class="text-xs space-y-1.5 text-slate-300">
+                                    <li>• Automotive detailing, tinting &amp; mechanical</li>
+                                    <li>• Medical, dental, dermatology &amp; wellness</li>
+                                    <li>• Legal, financial &amp; corporate advisory</li>
+                                    <li>• Logistics, contracting &amp; commercial supply</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- AGENCY COMPARISON MATRIX (In-House vs White-Label Partner) -->
+    <section class="py-24 bg-[#0c0f17] border-y border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="max-w-3xl mx-auto text-center space-y-4 mb-16 reveal-init">
+                <span class="text-xs font-mono uppercase tracking-widest text-sky-400 font-semibold">
+          Operational Math
+        </span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+                    Hiring In-House vs. Partnering With Ahmed
+                </h2>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                    Why growing marketing agencies prefer a specialized white-label execution partner over another fixed payroll overhead.
+                </p>
+            </div>
+
+            <div class="overflow-x-auto reveal-init">
+                <table class="w-full text-left text-xs sm:text-sm border-collapse glass-card rounded-2xl overflow-hidden">
+                    <thead>
+                        <tr class="border-b border-white/10 bg-white/5 text-slate-300 font-mono">
+                            <th class="p-4 sm:p-6">OPERATIONAL METRIC</th>
+                            <th class="p-4 sm:p-6 text-rose-400">IN-HOUSE FULL-TIME DESIGNER</th>
+                            <th class="p-4 sm:p-6 text-sky-400 font-bold bg-sky-950/20">WHITE-LABEL PARTNER (AHMED)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-white/5 text-slate-300">
+                        <tr>
+                            <td class="p-4 sm:p-6 font-semibold text-white">Monthly Fixed Overhead</td>
+                            <td class="p-4 sm:p-6 text-slate-400">Fixed salary, visa, workspace, insurance regardless of project flow</td>
+                            <td class="p-4 sm:p-6 text-slate-100 bg-sky-950/10 font-medium">Zero. Pay strictly per delivered project or active sprint</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 sm:p-6 font-semibold text-white">Management &amp; Babysitting</td>
+                            <td class="p-4 sm:p-6 text-slate-400">Requires daily task delegation, creative reviews, and oversight</td>
+                            <td class="p-4 sm:p-6 text-slate-100 bg-sky-950/10 font-medium">Zero. Forward the brief; receive finished site ready to review</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 sm:p-6 font-semibold text-white">Fluctuating Project Surges</td>
+                            <td class="p-4 sm:p-6 text-slate-400">Costly when quiet; bottlenecked when 4 new clients sign at once</td>
+                            <td class="p-4 sm:p-6 text-slate-100 bg-sky-950/10 font-medium">Instantly scalable. Spin up capacity when needed, zero cost when idle</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 sm:p-6 font-semibold text-white">GCC &amp; Arabic RTL Fluency</td>
+                            <td class="p-4 sm:p-6 text-slate-400">Rare among generalist offshore freelancers; often broken RTL styling</td>
+                            <td class="p-4 sm:p-6 text-slate-100 bg-sky-950/10 font-medium">Native execution. Kuwait agency background with bilingual mastery</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 sm:p-6 font-semibold text-white">GoHighLevel (GHL) Fluency</td>
+                            <td class="p-4 sm:p-6 text-slate-400">Requires platform training or leaves sites looking like generic templates</td>
+                            <td class="p-4 sm:p-6 text-slate-100 bg-sky-950/10 font-medium">Native expert. Custom CSS injection for bespoke UI inside sub-accounts</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 sm:p-6 font-semibold text-white">Client Protection &amp; Ethics</td>
+                            <td class="p-4 sm:p-6 text-slate-400">Risk of direct contact friction if junior staff talk to clients</td>
+                            <td class="p-4 sm:p-6 text-slate-100 bg-sky-950/10 font-medium">100% Guaranteed. Strict white-label; your agency is the sole hero</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SERVICES PAGE CTA -->
+    <section class="py-24 bg-[#08090d] text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 reveal-init">
+            <h3 class="text-3xl sm:text-4xl font-extrabold text-white">
+                Need Reliable Fulfillment on an Upcoming Website?
+            </h3>
+            <p class="text-slate-400 text-sm sm:text-base max-w-xl mx-auto">
+                Share the project brief or schedule a quick intro call to discuss your agency's build pipeline and delivery requirements.
+            </p>
+            <div class="flex items-center justify-center gap-4 pt-2">
+                <a href="contact.html" class="btn-primary text-sm py-3 px-8" data-i18n="navCta">
+          Discuss a Partnership
+        </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#050608] border-t border-white/10 py-16 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+                <div class="md:col-span-5 space-y-4">
+                    <a href="index.html" class="flex items-center gap-2">
+                        <span class="text-xl font-extrabold text-white">AHMED<span class="text-sky-400">.</span></span>
+                    </a>
+                    <p class="text-xs sm:text-sm text-slate-400 max-w-sm leading-relaxed" data-i18n="footerDesc">
+                        White-label website design and GoHighLevel fulfillment specialist partnering with digital marketing agencies across Kuwait, the GCC, and internationally.
+                    </p>
+                </div>
+                <div class="md:col-span-2 space-y-3">
+                    <h4 class="text-xs font-mono uppercase tracking-wider text-slate-200 font-semibold" data-i18n="footerQuickLinks">
+                        Navigation
+                    </h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="index.html" class="hover:text-white transition-colors" data-i18n="navHome">Home</a></li>
+                        <li><a href="work.html" class="hover:text-white transition-colors" data-i18n="navWork">Work</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors" data-i18n="navServices">Services</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors" data-i18n="navAbout">About</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors" data-i18n="navContact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-3 space-y-3">
+                    <h4 class="text-xs font-mono uppercase tracking-wider text-slate-200 font-semibold" data-i18n="footerServices">
+                        Core Services
+                    </h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#white-label" class="hover:text-white transition-colors">White-Label Fulfillment</a></li>
+                        <li><a href="#ghl-builds" class="hover:text-white transition-colors">GoHighLevel Websites &amp; Funnels</a></li>
+                        <li><a href="#bilingual" class="hover:text-white transition-colors">Arabic (RTL) &amp; English Parity</a></li>
+                        <li><a href="#local-business" class="hover:text-white transition-colors">Local Business Websites</a></li>
+                    </ul>
+                </div>
+                <div class="md:col-span-2 space-y-3">
+                    <h4 class="text-xs font-mono uppercase tracking-wider text-slate-200 font-semibold" data-i18n="footerDirectContact">
+                        Direct Inquiries
+                    </h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a target="_blank" href="https://wa.me/201097926288" class="cfg-whatsapp-link hover:text-sky-400 transition-colors">WhatsApp</a></li>
+                        <li>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ah.dev.3@gmail.com" target="_blank" rel="noopener noreferrer" class="cfg-email-link hover:text-sky-400 transition-colors">Email</a>
+                        </li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/ahmed-work-843909439/?isSelfProfile=true" class="cfg-linkedin-link hover:text-sky-400 transition-colors">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+                <div>
+                    &copy; <span class="current-year">2026</span> <span data-i18n="footerCopyright">All rights reserved. White-Label Fulfillment Specialist.</span>
+                </div>
+                <div data-i18n="footerLegalNote">
+                    All client projects delivered under strict agency white-label agreements.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
