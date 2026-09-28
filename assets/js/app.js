@@ -7,7 +7,6 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    initGlobalConfig();
     initMobileMenu();
     initActiveNav();
     initDynamicYear();
@@ -65,7 +64,16 @@ function initMobileMenu() {
         document.body.style.overflow = '';
     }
 
-    toggleBtn.addEventListener('click', openDrawer);
+    toggleBtn.addEventListener('click', () => {
+        const isOpen = !drawer.classList.contains('translate-x-full') &&
+            !drawer.classList.contains('-translate-x-full');
+
+        if (isOpen) {
+            closeDrawer();
+        } else {
+            openDrawer();
+        }
+    });
     if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
     if (backdrop) backdrop.addEventListener('click', closeDrawer);
 
@@ -122,10 +130,10 @@ function initContactForm() {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        const name = form.querySelector('[name="name"]') ? .value.trim();
-        const agency = form.querySelector('[name="agency"]') ? .value.trim();
-        const email = form.querySelector('[name="email"]') ? .value.trim();
-        const message = form.querySelector('[name="message"]') ? .value.trim();
+        const name = form.querySelector('[name="name"]')?.value.trim();
+        const agency = form.querySelector('[name="agency"]')?.value.trim();
+        const email = form.querySelector('[name="email"]')?.value.trim();
+        const message = form.querySelector('[name="message"]')?.value.trim();
 
         if (!name || !agency || !email || !message) {
             alert(document.documentElement.lang === 'ar' ?
