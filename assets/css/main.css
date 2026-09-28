@@ -25,6 +25,7 @@
 /* Base Configuration */
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
   background-color: var(--bg-primary);
   color: var(--text-main);
   text-rendering: optimizeLegibility;
