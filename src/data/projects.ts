@@ -1,142 +1,170 @@
 import { ProjectData } from '@/lib/types';
 
 export const PROJECTS: ProjectData[] = [
-  {
-    slug: 'al-awad-solutions',
+{
+    slug: 'sakina-mental-health',
     title: {
-      ar: 'حلول العواد السكنية والتجارية والصناعية',
-      en: 'Al Awad Residential, Commercial & Industrial Solutions',
+      ar: 'سَكينة | عيادات الصحة النفسية والاستشارات المتخصصة',
+      en: 'SAKINA | Mental Health Clinics & Specialized Counseling',
     },
     subtitle: {
-      ar: 'هيكلة رقمية ثنائية اللغة لمنظومة خدمات إنشائية وصناعية كويتية متعددة القطاعات',
-      en: 'Bilingual digital architecture for a multi-division Kuwait contracting and solutions provider',
+      ar: 'تجربة رقمية هادئة لقطاع الصحة النفسية، تجمع بين الطمأنينة المهنية ووضوح المعلومات، وتنظم الوصول إلى الخدمات والمختصين ضمن رحلة استخدام مدروسة تبدأ بفهم الاحتياج وتنتهي بالتعرف على خطوات طلب الاستشارة.',
+      en: 'A calm, trust-centered digital experience for a mental health clinic concept, bringing specialized services, practitioner profiles, and educational resources into a clear and structured consultation discovery journey.',
     },
     summary: {
-      ar: 'موقع إلكتروني تجاري متكامل ثنائي اللغة، يترجم مجالات الأعمال المتشعبة لشركة مقاولات وحلول هندسية كبرى إلى مسارات تصفح منضبطة وتجربة تواصل تجاري مباشرة.',
-      en: 'A comprehensive bilingual commercial website translating complex multi-sector contracting operations into structured navigation paths and seamless commercial inquiry flows.',
+      ar: 'مفهوم موقع متكامل لعيادات الصحة النفسية، ينظم الخدمات وملفات المختصين والمحتوى المعرفي ضمن تجربة عربية هادئة تساعد الزائر على فهم خيارات الرعاية والتعرف على خطوات طلب الاستشارة.',
+      en: 'An independent mental healthcare website concept that organizes specialized services, practitioner profiles, and educational resources into a calm Arabic RTL experience, with a clear and approachable consultation-request journey.',
     },
     sector: {
-      key: 'commercial-contracting',
+      key: 'healthcare',
       label: {
-        ar: 'المقاولات والحلول الإنشائية والتجارية',
-        en: 'Commercial & Residential Contracting',
+        ar: 'الرعاية الصحية والطبية',
+        en: 'Healthcare & Clinical',
       },
     },
     classification: {
-      key: 'client-project',
+      key: 'independent-concept',
       label: {
-        ar: 'مشروع عميل · تعاون مع وكالة',
-        en: 'Client Project · Agency Collaboration',
+        ar: 'مفهوم مستقل · نموذج عرض',
+        en: 'Independent Concept · Portfolio Demo',
       },
     },
     market: {
-      ar: 'الكويت',
-      en: 'Kuwait',
+      ar: 'المملكة العربية السعودية — سياق تجريبي',
+      en: 'Saudi Arabia — Demonstration Context',
     },
     languages: {
-      ar: 'العربية (RTL) والإنجليزية (LTR)',
-      en: 'Arabic (RTL) & English (LTR)',
+      ar: 'العربية (RTL)',
+      en: 'Arabic (RTL)',
     },
     role: {
-      ar: 'تنفيذ وتطوير الواجهة الأمامية وهندسة المحاذاة ثنائية اللغة بناءً على مواصفات الوكالة المعتمدة',
-      en: 'Front-End Implementation & Bilingual Layout Engineering based on agency-approved specifications',
+      ar: 'التخطيط البنيوي للمحتوى، تصميم الواجهات وتجربة المستخدم، وتطوير الواجهة الأمامية.',
+      en: 'Information Architecture, UI/UX Design, and Front-End Development.',
     },
-    liveUrl: 'https://alawad-arch.com/',
-    previewImage: '/images/projects/alawad.png',
-    galleryImages: ['/images/projects/alawad.png'],
+    liveUrl: 'https://sakena1.vercel.app/',
+    previewImage: '/images/projects/sakina-preview.png',
+    galleryImages: [
+      '/images/projects/sakina/hero.png',
+      '/images/projects/sakina/shot-services.png',
+      '/images/projects/sakina/shot-specialists.png',
+      '/images/projects/sakina/shot-booking.png',
+      '/images/projects/sakina/shot-knowledge.png',
+      '/images/projects/sakina/shot-about.png',
+    ],
     featured: true,
     order: 1,
-    year: '2025',
+    year: '2026',
     overview: {
-      ar: 'تم تطوير هذا الموقع المؤسسي لصالح شركة حلول ومقاولات رائدة في دولة الكويت من خلال شراكة عمل مع وكالة تسويق رقمي إقليمية، حيث تطلب المشروع استيعاب قطاعات عمل متباينة تشمل الحلول السكنية، التجارية، والمنشآت الصناعية.',
-      en: 'Engineered as a white-label agency collaboration for a premier Kuwait solutions provider, this corporate digital platform required structuring disparate business divisions—residential, commercial, and industrial facilities—into an intuitive, authoritative presence.',
+      ar: 'تجربة رقمية هادئة لقطاع الصحة النفسية، تجمع بين الطمأنينة المهنية ووضوح المعلومات، وتنظم الوصول إلى الخدمات والمختصين ضمن رحلة استخدام مدروسة تبدأ بفهم الاحتياج وتنتهي بالتعرف على خطوات طلب الاستشارة.',
+      en: 'A calm, trust-centered digital experience for a mental health clinic concept, bringing specialized services, practitioner profiles, and educational resources into a clear and structured consultation discovery journey.',
     },
     context: {
-      ar: 'تتميز شركات المقاولات والحلول الإنشائية الكبرى بتعدد خدماتها وتنوع جمهورها المستهدف بين الأفراد الباحثين عن حلول سكنية والمستثمرين ومدراء المشاريع في القطاعات التجارية والصناعية. كان التحدي يكمن في تقديم هذا الزخم الخدمي دون تشتيت الزائر أو إرباك مسار اتخاذ القرار.',
-      en: 'Large-scale contracting firms cater to diverse audiences ranging from individual homeowners to corporate project managers and industrial developers. The core operational imperative was organizing this breadth of capabilities without overwhelming visitors or clouding conversion paths.',
+      ar: 'تتطلب المواقع المتخصصة في الصحة النفسية معالجة مختلفة عن المواقع التجارية التقليدية؛ فقرار طلب الاستشارة يرتبط بمشاعر واحتياجات شخصية تستلزم مستوى مرتفعاً من الطمأنينة والوضوح والثقة المهنية.\n\nكان الهدف من هذا المشروع بناء تجربة رقمية تساعد الزائر على فهم طبيعة الخدمات المتاحة، والتعرف على المختصين، واستكشاف أسلوب الرعاية، دون إغراقه بالمعلومات أو استخدام لغة تسويقية مباشرة لا تتناسب مع حساسية المجال.',
+      en: 'Mental healthcare websites require a different communication approach from conventional commercial websites. Seeking psychological support is a personal decision that calls for reassurance, clarity, and professional credibility.\n\nThe objective was to create a digital experience that helps visitors understand available services, explore practitioner profiles, and discover the consultation process without overwhelming them with information or relying on aggressive promotional language.',
     },
     challenge: {
-      ar: 'تنظيم ثلاث قطاعات تشغيلية مستقلة في واجهة واحدة موحدة تضمن التدفق المنطقي للمعلومة، مع الحفاظ على التكافؤ البصري والطباعي الصارم بين النسختين العربية (من اليمين إلى اليسار) والإنجليزية (من اليسار إلى اليمين)، دون الاعتماد على الانعكاس التلقائي المشوه للمحاذاة.',
-      en: 'Harmonizing three distinct operational sectors within a singular design system while maintaining rigorous visual and typographic equilibrium across Arabic (RTL) and English (LTR) presentations without relying on fragile automated mirroring.',
+      ar: 'تمثل التحدي في تقديم مجموعة متنوعة من الخدمات النفسية والاستشارية ضمن تجربة موحدة يسهل استيعابها. يشمل ذلك الاستشارات الفردية، والدعم النفسي للقلق والاكتئاب، والإرشاد الأسري، وخدمات المراهقين، إلى جانب الاستشارات عن بُعد.\n\nكان من الضروري كذلك تنظيم معلومات المختصين والمحتوى التثقيفي والأسئلة الشائعة ومسار طلب الموعد، مع الحفاظ على اتساق التجربة وسهولة الوصول إلى المعلومات.',
+      en: 'The central challenge was to structure multiple psychological and counseling services within a unified experience that remains easy to understand and navigate. These include individual consultations, anxiety and depression support, family counseling, adolescent support, and remote consultations.\n\nThe experience also needed to organize practitioner profiles, educational resources, frequently asked questions, and the initial appointment-request journey without introducing unnecessary complexity.',
     },
     strategy: {
       description: {
-        ar: 'بناء مراكز استكشاف قطاعية (Service Hubs) مستقلة تسمح لكل فئة من العملاء بالوصول الفوري لما تبحث عنه، مع إبراز نقاط الاتصال التجاري المباشر وتنسيق الهيكل ثنائي الاتجاه.',
-        en: 'Creating dedicated sector capability hubs that route enterprise clients and residential owners directly to relevant solutions, flanked by prominent contextual inquiry triggers.',
+        ar: 'تم بناء التجربة حول رحلة استخدام تدريجية تنقل الزائر من التعرف على فلسفة العيادة إلى فهم الخدمات المتاحة ثم التعرف على المختصين والوصول إلى خطوات طلب الاستشارة. اعتمدت المعالجة على ثلاثة محاور أساسية:',
+        en: 'The experience was structured around a progressive user journey, guiding visitors from understanding the clinic\'s philosophy to exploring services, discovering practitioners, and understanding the consultation-request process. Three strategic pillars shaped the experience:',
       },
       points: [
         {
-          ar: 'تخصيص مسار تصفح مستقل ومحدد المعالم لكل من القطاع السكني، التجاري، والصناعي.',
-          en: 'Independent navigation pathways dedicated to residential, commercial, and industrial offerings.',
+          ar: 'بناء نقطة دخول مطمئنة: تقديم رسالة رئيسية واضحة تبرز الاستماع الواعي، والسرية المهنية، ومرونة خيارات الاستشارة منذ بداية التصفح.',
+          en: 'Establishing a Reassuring Entry Point: Communicating a clear message around attentive listening, professional confidentiality, and flexible consultation options from the beginning.',
         },
         {
-          ar: 'معالجة طباعية وهوية بصرية مستقلة لاتجاه القراءة العربي RTL لضمان انسيابية المطالعة ونبرة الوقار المؤسسي.',
-          en: 'Directional typographic tuning ensuring native Arabic reading flow alongside balanced English rhythm.',
+          ar: 'تنظيم الخدمات والمختصين: تقسيم الخدمات إلى وحدات مستقلة، وتقديم ملفات المختصين بصورة منظمة تساعد الزائر على استكشاف الخيارات المتاحة بسهولة.',
+          en: 'Structuring Services and Practitioners: Organizing services into distinct sections and presenting practitioner profiles in a structured format that makes available options easier to explore.',
         },
         {
-          ar: 'تكامل قنوات المراسلة المباشرة وتطبيق واتساب التجاري عند كل نقطة استعراض للخدمة لتسريع وتيرة التواصل.',
-          en: 'Strategic placement of instant WhatsApp and corporate inquiry points beside all technical specifications.',
+          ar: 'تبسيط رحلة طلب الاستشارة: توضيح مسار الطلب عبر خطوات متتابعة تبدأ باختيار الخدمة والتفضيلات، ثم إرسال طلب الموعد المبدئي، وصولاً إلى متابعة فريق التنسيق.',
+          en: 'Simplifying the Consultation Journey: Explaining the initial request process through sequential steps, from choosing a service and preferences to submitting a preliminary request and subsequent coordination.',
         },
       ],
     },
     designAndUx: {
       description: {
-        ar: 'تصميم واجهة متزنة تعتمد الكتل الهيكلية الواضحة، التباين العالي بين عناصر القراءة، والتنقل السلس عبر الأجهزة المحمولة التي تمثل النسبة العظمى من زيارات السوق الخليجي.',
-        en: 'A structured editorial aesthetic emphasizing clear compartmentalization, high typographic contrast, and frictionless mobile navigation tailored to Gulf browsing habits.',
+        ar: 'اعتمد الاتجاه البصري على ألوان ترابية دافئة، وتوزيع متوازن للمساحات، ومعالجة تصويرية هادئة تستحضر بيئة مريحة بعيدة عن الطابع الطبي التقليدي. تم الاهتمام بالمعالجة الطباعية العربية واتجاه القراءة من اليمين إلى اليسار، مع ضبط التسلسل البصري للعناوين والمحتوى والعناصر التفاعلية. وشملت قرارات التصميم:',
+        en: 'The visual direction uses warm earthy tones, balanced whitespace, and calming imagery to evoke a welcoming environment rather than a conventional clinical atmosphere. Special attention was given to Arabic typography, right-to-left reading patterns, and the visual hierarchy of headings, content, and interactive elements. Key design decisions included:',
       },
       points: [
         {
-          ar: 'تسلسل بصري متدرج ينقل الزائر من المفهوم العام للحلول إلى المواصفات التفصيلية ثم قنوات الطلب.',
-          en: 'Progressive disclosure leading from high-level capabilities to detailed execution specs and contact actions.',
+          ar: 'لوحة ألوان هادئة ودرجات دافئة تدعم الانطباع الإنساني والمريح للعلامة.',
+          en: 'A warm and restrained color palette supporting the brand\'s reassuring and human-centered identity.',
         },
         {
-          ar: 'تعديل المسافات البينية وهوامش البطاقات لضمان استقرار الهيكل على مختلف قياسات الشاشات والأجهزة اللوحية.',
-          en: 'Calibrated spacing grids preventing content overflow and maintaining visual stability across breakpoints.',
+          ar: 'تسلسل بصري واضح يساعد المستخدم على استيعاب المعلومات والوصول للخدمات دون تشتيت.',
+          en: 'A clear visual hierarchy that makes information easier to understand and navigate.',
+        },
+        {
+          ar: 'بطاقات خدمات وملفات مختصين منظمة تسهل استكشاف الخيارات المتاحة.',
+          en: 'Structured service and practitioner cards that simplify the discovery process.',
+        },
+        {
+          ar: 'توزيع متجاوب للمحتوى والعناصر يراعي الهواتف الذكية والأجهزة اللوحية والشاشات الكبيرة.',
+          en: 'Responsive content layouts designed to adapt to mobile devices, tablets, and desktop screens.',
         },
       ],
     },
     execution: {
       description: {
-        ar: 'تطبيق بنية الواجهات وفق أعلى معايير ضبط الجودة والتوافق مع متطلبات الوكالة والشاشات الحديثة.',
-        en: 'Execution focused on modular interface delivery adhering strictly to agency design guidelines and multi-device compliance.',
+        ar: 'تجسد التنفيذ في بناء نموذج موقع متكامل يجمع الأقسام الأساسية اللازمة لتقديم العيادة وخدماتها ضمن تجربة رقمية موحدة. تم تقديم واجهات طلب المواعيد كواجهة استعراض توضيحية لرحلة الطلب دون تمثيلها كنظام حجز طبي تشغيلي أو ربطها بقواعد بيانات مرضية.',
+        en: 'The implementation brings together the essential sections required to present a specialized mental healthcare clinic within a cohesive digital experience. The appointment interfaces are presented as a demonstration journey rather than a live medical booking system or clinical database.',
       },
       points: [
         {
-          ar: 'بناء محاور الخدمات وتنسيق الأنماط البرمجية المخصصة لضبط الاتجاهين LTR و RTL.',
-          en: 'Custom layout engineering accommodating bidirectional rendering without alignment anomalies.',
+          ar: 'واجهة رئيسية للتعريف بالعيادة وفلسفتها وقسم مستقل لمنهج الرعاية الاستشارية.',
+          en: 'A homepage introducing the clinic and its philosophy with a dedicated care-approach section.',
         },
         {
-          ar: 'تحسين سرعة تحميل الوسائط والصور الميدانية لضمان استجابة سريعة عبر شبكات الاتصال المتنقلة.',
-          en: 'Optimization of heavy structural imagery to ensure rapid loading on cellular connections.',
+          ar: 'تنظيم الخدمات النفسية والاستشارية المختلفة وملفات تعريفية توضيحية للمختصين.',
+          en: 'Organized psychological and counseling services alongside illustrative practitioner profile pages.',
+        },
+        {
+          ar: 'مسار توضيحي لطلب الاستشارة والمواعيد، ومكتبة معرفية للمقالات وقسم للأسئلة الشائعة.',
+          en: 'A demonstration consultation-request journey, an educational library, and frequently asked questions.',
         },
       ],
     },
     deliverables: {
       ar: [
-        'موقع مؤسسي تفاعلي متكامل ثنائي اللغة (عربي / إنجليزي)',
-        'هندسة مسارات تصفح متخصصة للحلول السكنية والتجارية والصناعية',
-        'تكامل كامل لقنوات الاستفسار السريع عبر واتساب والبريد المؤسسي',
-        'تخطيط متجاوب بنسبة 100% للشاشات المكتبية واللوحية والهواتف الذكية',
-        'بنية محايدة ومهيأة لمحركات البحث والترميز المؤسسي الصحيح',
+        'واجهة رئيسية للتعريف بالعيادة وفلسفتها الرعائية',
+        'قسم مستقل للتعريف بالعيادة ومنهج الرعاية',
+        'تنظيم متكامل للخدمات النفسية والاستشارية المختلفة',
+        'ملفات تعريفية توضيحية للمختصين والمؤهلات المهنية',
+        'مسار توضيحي لطلب الاستشارة والمواعيد (واجهة استعراض)',
+        'مكتبة معرفية للمقالات والمحتوى التثقيفي المتخصص',
+        'قسم للأسئلة الشائعة وقنوات التواصل والتنسيق',
+        'معالجة واجهات عربية أصيلة باتجاه RTL وتدرج طباعي متزن',
+        'تصميم متجاوب بالكامل لمقاسات الشاشات المختلفة',
       ],
       en: [
-        'Complete bilingual corporate website (Arabic RTL / English LTR)',
-        'Dedicated capability hubs for residential, commercial, and industrial offerings',
-        'Direct WhatsApp and regional corporate inquiry integration',
-        'Fully responsive multi-breakpoint layout architecture',
-        'SEO-ready semantic structure and metadata foundations',
+        'A homepage introducing the clinic and its philosophy',
+        'A dedicated clinic and care-approach section',
+        'Organized psychological and counseling services',
+        'Illustrative practitioner profile pages',
+        'A demonstration consultation-request journey',
+        'An educational library and editorial content',
+        'Frequently asked questions and contact sections',
+        'Arabic RTL interface implementation with calibrated typography',
+        'Responsive layouts designed across mobile, tablet, and desktop screens',
       ],
     },
     observations: {
-      ar: 'تم تنفيذ المشروع ضمن إطار تعاقدي كشريك واجهة أمامية (White-label) مع وكالة تسويق رقمي في الكويت، حيث قام أحمد بتنفيذ وتطوير بنية الموقع وضبط التجاوب ودقة المحاذاة استناداً إلى النماذج المعتمدة من العميل والوكالة.',
-      en: 'Delivered on a white-label basis for a Kuwait digital marketing agency. Ahmed engineered the front-end layout, responsive typography, and bilingual alignment based on agency-approved design specifications.',
+      ar: 'سَكينة مشروع مفاهيمي مستقل نفذه أحمد لأغراض العرض ضمن محفظة أعماله، بهدف استعراض قدرته على تصميم وتطوير تجربة رقمية متكاملة لقطاع الصحة النفسية والاستشارات المتخصصة. الهوية والبيانات التعريفية والشخصيات والمؤهلات والمعلومات الطبية وبيانات التواصل والمواعيد الواردة في النموذج هي بيانات توضيحية وتجريبية. المشروع لا يمثل عيادة طبية قائمة، ولا يقدم خدمات صحية فعلية، كما أن واجهات طلب المواعيد لا تمثل نظام حجز طبي تشغيلياً.',
+      en: 'SAKINA is an independent conceptual website project developed by Ahmed for portfolio demonstration purposes. It was created to showcase the ability to design and develop a structured digital experience for the mental healthcare and specialized counseling sector. The clinic identity, illustrative practitioners, credentials, clinical information, contact details, and appointment data presented throughout the website are demonstration placeholders. This project does not represent an operational clinic or an active medical service. Its appointment interfaces are illustrative and do not constitute a production medical booking system.',
     },
     outcomeNotes: {
-      ar: 'أثمر العمل عن إطلاق بوابة رقمية موحدة تعكس ثقل الشركة الإنشائي، وتسهل على صانعي القرار في المشاريع الكبرى طلب عروض الأسعار واستعراض سابقة الأعمال بثقة ووضوح.',
-      en: 'Delivered an authoritative corporate destination that crystallizes the company’s contracting stature, enabling regional commercial decision-makers to inspect capabilities and initiate inquiries seamlessly.',
+      ar: 'يقدم المشروع نموذجاً لتوظيف التصميم الاستراتيجي وتنظيم المحتوى في تحويل مجال حساس مثل الصحة النفسية إلى تجربة رقمية أكثر وضوحاً وهدوءاً. ويبرز القدرة على بناء هيكل معلومات منظم، وتسهيل استكشاف الخدمات والمختصين، وشرح رحلة طلب الاستشارة ضمن واجهة متماسكة تراعي طبيعة الجمهور وخصوصية المجال.',
+      en: 'The project demonstrates how strategic design and structured content can translate a sensitive field such as mental healthcare into a clearer and more reassuring digital experience. It showcases the ability to organize complex information, simplify service discovery, present practitioner profiles, and communicate the consultation journey through a cohesive interface suited to the nature of the audience and industry.',
     },
   },
-  {
+
+{
     slug: 'mithaq-legal',
     title: {
       ar: 'مِيثاق | المحاماة والاستشارات القانونية',
@@ -281,7 +309,142 @@ export const PROJECTS: ProjectData[] = [
       en: 'Serves as an undeniable testament to Ahmed’s capacity to envision and engineer digital flagship experiences that rival premier global design agencies in sophistication and technical finesse.',
     },
   },
-  {
+{
+    slug: 'al-awad-solutions',
+    title: {
+      ar: 'حلول العواد السكنية والتجارية والصناعية',
+      en: 'Al Awad Residential, Commercial & Industrial Solutions',
+    },
+    subtitle: {
+      ar: 'هيكلة رقمية ثنائية اللغة لمنظومة خدمات إنشائية وصناعية كويتية متعددة القطاعات',
+      en: 'Bilingual digital architecture for a multi-division Kuwait contracting and solutions provider',
+    },
+    summary: {
+      ar: 'موقع إلكتروني تجاري متكامل ثنائي اللغة، يترجم مجالات الأعمال المتشعبة لشركة مقاولات وحلول هندسية كبرى إلى مسارات تصفح منضبطة وتجربة تواصل تجاري مباشرة.',
+      en: 'A comprehensive bilingual commercial website translating complex multi-sector contracting operations into structured navigation paths and seamless commercial inquiry flows.',
+    },
+    sector: {
+      key: 'commercial-contracting',
+      label: {
+        ar: 'المقاولات والحلول الإنشائية والتجارية',
+        en: 'Commercial & Residential Contracting',
+      },
+    },
+    classification: {
+      key: 'client-project',
+      label: {
+        ar: 'مشروع عميل · تعاون مع وكالة',
+        en: 'Client Project · Agency Collaboration',
+      },
+    },
+    market: {
+      ar: 'الكويت',
+      en: 'Kuwait',
+    },
+    languages: {
+      ar: 'العربية (RTL) والإنجليزية (LTR)',
+      en: 'Arabic (RTL) & English (LTR)',
+    },
+    role: {
+      ar: 'تنفيذ وتطوير الواجهة الأمامية وهندسة المحاذاة ثنائية اللغة بناءً على مواصفات الوكالة المعتمدة',
+      en: 'Front-End Implementation & Bilingual Layout Engineering based on agency-approved specifications',
+    },
+    liveUrl: 'https://alawad-arch.com/',
+    previewImage: '/images/projects/alawad.png',
+    galleryImages: ['/images/projects/alawad.png'],
+    featured: true,
+    order: 3,
+    year: '2025',
+    overview: {
+      ar: 'تم تطوير هذا الموقع المؤسسي لصالح شركة حلول ومقاولات رائدة في دولة الكويت من خلال شراكة عمل مع وكالة تسويق رقمي إقليمية، حيث تطلب المشروع استيعاب قطاعات عمل متباينة تشمل الحلول السكنية، التجارية، والمنشآت الصناعية.',
+      en: 'Engineered as a white-label agency collaboration for a premier Kuwait solutions provider, this corporate digital platform required structuring disparate business divisions—residential, commercial, and industrial facilities—into an intuitive, authoritative presence.',
+    },
+    context: {
+      ar: 'تتميز شركات المقاولات والحلول الإنشائية الكبرى بتعدد خدماتها وتنوع جمهورها المستهدف بين الأفراد الباحثين عن حلول سكنية والمستثمرين ومدراء المشاريع في القطاعات التجارية والصناعية. كان التحدي يكمن في تقديم هذا الزخم الخدمي دون تشتيت الزائر أو إرباك مسار اتخاذ القرار.',
+      en: 'Large-scale contracting firms cater to diverse audiences ranging from individual homeowners to corporate project managers and industrial developers. The core operational imperative was organizing this breadth of capabilities without overwhelming visitors or clouding conversion paths.',
+    },
+    challenge: {
+      ar: 'تنظيم ثلاث قطاعات تشغيلية مستقلة في واجهة واحدة موحدة تضمن التدفق المنطقي للمعلومة، مع الحفاظ على التكافؤ البصري والطباعي الصارم بين النسختين العربية (من اليمين إلى اليسار) والإنجليزية (من اليسار إلى اليمين)، دون الاعتماد على الانعكاس التلقائي المشوه للمحاذاة.',
+      en: 'Harmonizing three distinct operational sectors within a singular design system while maintaining rigorous visual and typographic equilibrium across Arabic (RTL) and English (LTR) presentations without relying on fragile automated mirroring.',
+    },
+    strategy: {
+      description: {
+        ar: 'بناء مراكز استكشاف قطاعية (Service Hubs) مستقلة تسمح لكل فئة من العملاء بالوصول الفوري لما تبحث عنه، مع إبراز نقاط الاتصال التجاري المباشر وتنسيق الهيكل ثنائي الاتجاه.',
+        en: 'Creating dedicated sector capability hubs that route enterprise clients and residential owners directly to relevant solutions, flanked by prominent contextual inquiry triggers.',
+      },
+      points: [
+        {
+          ar: 'تخصيص مسار تصفح مستقل ومحدد المعالم لكل من القطاع السكني، التجاري، والصناعي.',
+          en: 'Independent navigation pathways dedicated to residential, commercial, and industrial offerings.',
+        },
+        {
+          ar: 'معالجة طباعية وهوية بصرية مستقلة لاتجاه القراءة العربي RTL لضمان انسيابية المطالعة ونبرة الوقار المؤسسي.',
+          en: 'Directional typographic tuning ensuring native Arabic reading flow alongside balanced English rhythm.',
+        },
+        {
+          ar: 'تكامل قنوات المراسلة المباشرة وتطبيق واتساب التجاري عند كل نقطة استعراض للخدمة لتسريع وتيرة التواصل.',
+          en: 'Strategic placement of instant WhatsApp and corporate inquiry points beside all technical specifications.',
+        },
+      ],
+    },
+    designAndUx: {
+      description: {
+        ar: 'تصميم واجهة متزنة تعتمد الكتل الهيكلية الواضحة، التباين العالي بين عناصر القراءة، والتنقل السلس عبر الأجهزة المحمولة التي تمثل النسبة العظمى من زيارات السوق الخليجي.',
+        en: 'A structured editorial aesthetic emphasizing clear compartmentalization, high typographic contrast, and frictionless mobile navigation tailored to Gulf browsing habits.',
+      },
+      points: [
+        {
+          ar: 'تسلسل بصري متدرج ينقل الزائر من المفهوم العام للحلول إلى المواصفات التفصيلية ثم قنوات الطلب.',
+          en: 'Progressive disclosure leading from high-level capabilities to detailed execution specs and contact actions.',
+        },
+        {
+          ar: 'تعديل المسافات البينية وهوامش البطاقات لضمان استقرار الهيكل على مختلف قياسات الشاشات والأجهزة اللوحية.',
+          en: 'Calibrated spacing grids preventing content overflow and maintaining visual stability across breakpoints.',
+        },
+      ],
+    },
+    execution: {
+      description: {
+        ar: 'تطبيق بنية الواجهات وفق أعلى معايير ضبط الجودة والتوافق مع متطلبات الوكالة والشاشات الحديثة.',
+        en: 'Execution focused on modular interface delivery adhering strictly to agency design guidelines and multi-device compliance.',
+      },
+      points: [
+        {
+          ar: 'بناء محاور الخدمات وتنسيق الأنماط البرمجية المخصصة لضبط الاتجاهين LTR و RTL.',
+          en: 'Custom layout engineering accommodating bidirectional rendering without alignment anomalies.',
+        },
+        {
+          ar: 'تحسين سرعة تحميل الوسائط والصور الميدانية لضمان استجابة سريعة عبر شبكات الاتصال المتنقلة.',
+          en: 'Optimization of heavy structural imagery to ensure rapid loading on cellular connections.',
+        },
+      ],
+    },
+    deliverables: {
+      ar: [
+        'موقع مؤسسي تفاعلي متكامل ثنائي اللغة (عربي / إنجليزي)',
+        'هندسة مسارات تصفح متخصصة للحلول السكنية والتجارية والصناعية',
+        'تكامل كامل لقنوات الاستفسار السريع عبر واتساب والبريد المؤسسي',
+        'تخطيط متجاوب بنسبة 100% للشاشات المكتبية واللوحية والهواتف الذكية',
+        'بنية محايدة ومهيأة لمحركات البحث والترميز المؤسسي الصحيح',
+      ],
+      en: [
+        'Complete bilingual corporate website (Arabic RTL / English LTR)',
+        'Dedicated capability hubs for residential, commercial, and industrial offerings',
+        'Direct WhatsApp and regional corporate inquiry integration',
+        'Fully responsive multi-breakpoint layout architecture',
+        'SEO-ready semantic structure and metadata foundations',
+      ],
+    },
+    observations: {
+      ar: 'تم تنفيذ المشروع ضمن إطار تعاقدي كشريك واجهة أمامية (White-label) مع وكالة تسويق رقمي في الكويت، حيث قام أحمد بتنفيذ وتطوير بنية الموقع وضبط التجاوب ودقة المحاذاة استناداً إلى النماذج المعتمدة من العميل والوكالة.',
+      en: 'Delivered on a white-label basis for a Kuwait digital marketing agency. Ahmed engineered the front-end layout, responsive typography, and bilingual alignment based on agency-approved design specifications.',
+    },
+    outcomeNotes: {
+      ar: 'أثمر العمل عن إطلاق بوابة رقمية موحدة تعكس ثقل الشركة الإنشائي، وتسهل على صانعي القرار في المشاريع الكبرى طلب عروض الأسعار واستعراض سابقة الأعمال بثقة ووضوح.',
+      en: 'Delivered an authoritative corporate destination that crystallizes the company’s contracting stature, enabling regional commercial decision-makers to inspect capabilities and initiate inquiries seamlessly.',
+    },
+  },
+{
     slug: 'safeer-al-oamara',
     title: {
       ar: 'سفير الأمراء للمستلزمات والأزياء الرجالية التراثية',
@@ -325,7 +488,7 @@ export const PROJECTS: ProjectData[] = [
     previewImage: '/images/projects/safer.png',
     galleryImages: ['/images/projects/safer.png'],
     featured: true,
-    order: 3,
+    order: 4,
     year: '2025',
     overview: {
       ar: 'تم بناء هذا الموقع كحل رقمي أنيق لمتجر كويتي عريق في مجال الأزياء والمستلزمات الرجالية التقليدية، حيث كان التحدي هو نقل الفخامة والخصوصية التراثية إلى الشاشة دون تعقيد مسار الشراء المباشر للعميل الخليجي.',
@@ -414,7 +577,7 @@ export const PROJECTS: ProjectData[] = [
       en: 'Enabled the retail brand to channel fragmented social traffic into a coherent, prestigious catalog that accelerated direct sales discussions.',
     },
   },
-  {
+{
     slug: 'mobile-car-wash-kuwait',
     title: {
       ar: 'غسيل وتلميع السيارات المتنقل في الكويت (A2Z Wash)',
@@ -458,7 +621,7 @@ export const PROJECTS: ProjectData[] = [
     previewImage: '/images/projects/car-wash.png',
     galleryImages: ['/images/projects/car-wash.png'],
     featured: true,
-    order: 4,
+    order: 5,
     year: '2025',
     overview: {
       ar: 'تم تصميم وتطوير هذه المنصة الخدمية للتعامل مع الطبيعة السريعة لخدمات غسيل وتلميع السيارات عند المنزل أو العمل في الكويت؛ حيث يبحث المستخدم عادةً عن الباقة والسعر والاتصال بأسرع وقت ممكن.',
@@ -547,7 +710,7 @@ export const PROJECTS: ProjectData[] = [
       en: 'Achieved the primary commercial goal of minimizing customer decision latency, routing high-intent mobile visitors straight into WhatsApp dispatch chats.',
     },
   },
-  {
+{
     slug: 'al-nser-grills',
     title: {
       ar: 'مشويات ومطعم النسر الفضي للمأكولات الأصيلة',
@@ -591,7 +754,7 @@ export const PROJECTS: ProjectData[] = [
     previewImage: '/images/projects/resturant.png',
     galleryImages: ['/images/projects/resturant.png'],
     featured: false,
-    order: 5,
+    order: 6,
     year: '2025',
     overview: {
       ar: 'مشروع واجهة رقمية لمطعم مشويات شهير في الكويت يهدف إلى تحويل القائمة الورقية المحدودة إلى منيو تفاعلي عالي الوضوح يمكن للزبائن تصفحه واختيار وجباتهم منه بسهولة تامة.',
@@ -680,7 +843,7 @@ export const PROJECTS: ProjectData[] = [
       en: 'Empowered the restaurant to capture home delivery orders with higher accuracy, eliminating phone miscommunications via structured WhatsApp order summaries.',
     },
   },
-  {
+{
     slug: 'al-ibtikar-auto',
     title: {
       ar: 'مركز الابتكار المتخصص لصيانة وهندسة السيارات',
@@ -724,7 +887,7 @@ export const PROJECTS: ProjectData[] = [
     previewImage: '/images/projects/car-cur.png',
     galleryImages: ['/images/projects/car-cur.png'],
     featured: false,
-    order: 6,
+    order: 7,
     year: '2025',
     overview: {
       ar: 'مركز الابتكار لصيانة السيارات هو مشروع رقمي يهدف إلى ترسيخ مكانة مركز صيانة حديث كوجهة موثوقة لأصحاب السيارات الألمانية والأمريكية واليابانية في الكويت، عبر إبراز الأجهزة المتطورة وكفاءة الفنيين.',
@@ -813,7 +976,7 @@ export const PROJECTS: ProjectData[] = [
       en: 'Enabled the repair facility to capture steady appointments for diagnostic scans and engine overhauls, optimizing garage bay occupancy.',
     },
   },
-  {
+{
     slug: 'boomtwon-travel',
     title: {
       ar: 'منصة بوم تاون لاستكشاف الوجهات والسياحة',
@@ -857,7 +1020,7 @@ export const PROJECTS: ProjectData[] = [
     previewImage: '/images/projects/BoomTwon.png',
     galleryImages: ['/images/projects/BoomTwon.png'],
     featured: false,
-    order: 7,
+    order: 8,
     year: '2024',
     overview: {
       ar: 'صُمم هذا العمل كمشروع واجهة مستقل لاختبار أحدث أساليب العرض البصري لقطاع السياحة والسفر؛ حيث يتم التركيز على إيقاظ الشغف بالاستكشاف عبر صور غامرة وتفاصيل منظمة لكل وجهة.',
@@ -932,7 +1095,7 @@ export const PROJECTS: ProjectData[] = [
       en: 'Demonstrates refined visual hierarchy and inspirational UX patterns tailored for high-end tour operators.',
     },
   },
-  {
+{
     slug: 'hoobank-financial',
     title: {
       ar: 'منصة هوو بنك للخدمات المالية والمدفوعات الذكية',
@@ -976,7 +1139,7 @@ export const PROJECTS: ProjectData[] = [
     previewImage: '/images/projects/HooBank.png',
     galleryImages: ['/images/projects/HooBank.png'],
     featured: false,
-    order: 8,
+    order: 9,
     year: '2024',
     overview: {
       ar: 'مشروع أمامي مستقل يركز على قطاع التكنولوجيا المالية سريع النمو؛ حيث يتطلب إقناع العميل نقل الثقة والأمان التقني جنباً إلى جنب مع السرعة والسهولة.',
@@ -1051,7 +1214,7 @@ export const PROJECTS: ProjectData[] = [
       en: 'Showcases how early-stage fintech ventures can project authoritative maturity and tech superiority from day one.',
     },
   },
-  {
+{
     slug: 'urbanbuild-construction',
     title: {
       ar: 'منصة إربان بيلد للتطوير العقاري والمقاولات الحديثة',
@@ -1095,7 +1258,7 @@ export const PROJECTS: ProjectData[] = [
     previewImage: '/images/projects/building.png',
     galleryImages: ['/images/projects/building.png'],
     featured: false,
-    order: 9,
+    order: 10,
     year: '2024',
     overview: {
       ar: 'مشروع أمامي مستقل يدرس كيفية استعراض سابقة أعمال المقاولات والتطوير العمراني بأسلوب حديث يبتعد عن رتابة المواقع الإنشائية الكلاسيكية.',
@@ -1170,7 +1333,7 @@ export const PROJECTS: ProjectData[] = [
       en: 'Proves how conventional contracting firms can command premium positioning through disciplined architectural digital presentation.',
     },
   },
-  {
+{
     slug: 'medtro-healthcare',
     title: {
       ar: 'شبكة ميدترو للرعاية الصحية والمراكز الطبية المتكاملة',
@@ -1214,7 +1377,7 @@ export const PROJECTS: ProjectData[] = [
     previewImage: '/images/projects/MedTro.png',
     galleryImages: ['/images/projects/MedTro.png'],
     featured: false,
-    order: 10,
+    order: 11,
     year: '2024',
     overview: {
       ar: 'مشروع أمامي مستقل يستهدف قطاع الرعاية الصحية والمجمعات الطبية؛ حيث يمثل التيسير على المريض والوضوح التام في استعراض الكوادر الطبية عاملاً حاسماً في بناء الأمان النفسي.',
@@ -1289,7 +1452,7 @@ export const PROJECTS: ProjectData[] = [
       en: 'Illustrates disciplined design thinking applied to mission-critical industries where trust and accessibility are paramount.',
     },
   },
-  {
+{
     slug: 'saas-productivity',
     title: {
       ar: 'منصة فلو سينك للإنتاجية وإدارة العمليات السحابية',
@@ -1333,7 +1496,7 @@ export const PROJECTS: ProjectData[] = [
     previewImage: '/images/projects/SaaS.png',
     galleryImages: ['/images/projects/SaaS.png'],
     featured: false,
-    order: 11,
+    order: 12,
     year: '2024',
     overview: {
       ar: 'مشروع أمامي مستقل يدرس أفضل الممارسات العالمية في تصميم صفحات الهبوط للبرمجيات السحابية (B2B SaaS)؛ حيث يكمن التحدي في شرح القيمة البرمجية خلال الثواني الأولى.',
@@ -1408,6 +1571,7 @@ export const PROJECTS: ProjectData[] = [
       en: 'Sets a high benchmark for modern software landing pages that harmonize aesthetic digital craft with commercial conversion clarity.',
     },
   },
+
 ];
 
 export const BUSINESS_SECTORS = [

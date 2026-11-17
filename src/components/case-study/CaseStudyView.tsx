@@ -23,6 +23,19 @@ export default function CaseStudyView({ project, locale }: CaseStudyViewProps) {
   const currentIndex = PROJECTS.findIndex((p) => p.slug === project.slug);
   const nextProject = PROJECTS[(currentIndex + 1) % PROJECTS.length];
 
+  const getGalleryAlt = (img: string, index: number) => {
+    if (img.includes('sakina')) {
+      if (img.includes('hero')) return isArabic ? 'سَكينة - لقطة الصفحة الرئيسية لعيادات الصحة النفسية' : 'SAKINA - Mental Health Clinics Desktop Homepage Interface';
+      if (img.includes('services')) return isArabic ? 'سَكينة - تنظيم الخدمات النفسية والاستشارية المتخصصة' : 'SAKINA - Specialized Clinical Services Architecture';
+      if (img.includes('specialists')) return isArabic ? 'سَكينة - ملفات الأخصائيين والكوادر الاستشارية' : 'SAKINA - Practitioner Profiles and Credentials';
+      if (img.includes('booking')) return isArabic ? 'سَكينة - مسار استعراض طلب الاستشارة والمواعيد' : 'SAKINA - Consultation Request Discovery Journey';
+      if (img.includes('knowledge')) return isArabic ? 'سَكينة - المكتبة المعرفية والمحتوى التثقيفي' : 'SAKINA - Educational Library & Editorial Content';
+      if (img.includes('about')) return isArabic ? 'سَكينة - فلسفة العيادة ومنهج الرعاية المتكاملة' : 'SAKINA - Clinic Philosophy & Therapeutic Approach';
+      if (img.includes('mobile')) return isArabic ? 'سَكينة - واجهة الهاتف الذكي المتجاوبة' : 'SAKINA - Responsive Mobile Experience';
+    }
+    return `${project.title[locale]} - ${isArabic ? 'لقطة واجهة' : 'Interface Shot'} 0${index + 1}`;
+  };
+
   return (
     <article className="min-h-screen pt-28 pb-24 bg-background transition-colors">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
@@ -67,7 +80,11 @@ export default function CaseStudyView({ project, locale }: CaseStudyViewProps) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-foreground text-background text-xs font-semibold hover:bg-accent hover:text-accent-foreground transition-all shadow-sm"
               >
-                <span>{t.caseStudy.liveProjectLink}</span>
+                <span>
+                  {project.classification.key === 'independent-concept'
+                    ? (isArabic ? 'استعراض النموذج' : 'View Project Demo')
+                    : t.caseStudy.liveProjectLink}
+                </span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>
@@ -226,8 +243,8 @@ export default function CaseStudyView({ project, locale }: CaseStudyViewProps) {
           </div>
         </section>
 
-        {/* 08. Project Gallery (If multiple shots exist, e.g. for Mithaq) */}
-        {/* {project.galleryImages && project.galleryImages.length > 1 && (
+        {/* 08. Project Gallery (If multiple shots exist, e.g. for Sakina or Mithaq)
+        {project.galleryImages && project.galleryImages.length > 1 && (
           <section className="space-y-6">
             <div className="space-y-2">
               <span className="text-xs font-mono uppercase tracking-widest text-accent font-semibold">
@@ -246,7 +263,7 @@ export default function CaseStudyView({ project, locale }: CaseStudyViewProps) {
                 >
                   <Image
                     src={img}
-                    alt={`${project.title[locale]} - Shot 0${i + 1}`}
+                    alt={getGalleryAlt(img, i)}
                     fill
                     unoptimized
                     className="object-cover object-top"

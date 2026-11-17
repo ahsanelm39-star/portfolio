@@ -159,7 +159,11 @@ export default function WorkGrid({ locale }: WorkGridProps) {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 text-[11px] font-mono text-muted hover:text-foreground transition-colors"
                     >
-                      <span>{t.work.viewLive}</span>
+                      <span>
+                        {project.classification.key === 'independent-concept'
+                          ? (isArabic ? 'استعرض النموذج' : 'View Project Demo')
+                          : t.work.viewLive}
+                      </span>
                       <ExternalLink className="w-3 h-3" />
                     </a>
                   )}

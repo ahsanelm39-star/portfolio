@@ -18,10 +18,11 @@ export default function FeaturedWork({ locale }: FeaturedWorkProps) {
   const ArrowIcon = isArabic ? ArrowLeft : ArrowRight;
 
   const featuredList = PROJECTS.filter((p) => p.featured);
-  const mithaq = featuredList.find((p) => p.slug === 'mithaq-legal') || featuredList[0];
-  const alawad = featuredList.find((p) => p.slug === 'al-awad-solutions') || featuredList[1];
-  const safer = featuredList.find((p) => p.slug === 'safeer-al-oamara') || featuredList[2];
-  const a2z = featuredList.find((p) => p.slug === 'mobile-car-wash-kuwait') || featuredList[3];
+  const sakina = featuredList.find((p) => p.slug === 'sakina-mental-health') || featuredList[0];
+  const mithaq = featuredList.find((p) => p.slug === 'mithaq-legal') || featuredList[1];
+  const alawad = featuredList.find((p) => p.slug === 'al-awad-solutions') || featuredList[2];
+  const safer = featuredList.find((p) => p.slug === 'safeer-al-oamara') || featuredList[3];
+  const a2z = featuredList.find((p) => p.slug === 'mobile-car-wash-kuwait') || featuredList[4];
 
   return (
     <section className="py-24 bg-background transition-colors">
@@ -49,11 +50,101 @@ export default function FeaturedWork({ locale }: FeaturedWorkProps) {
           </Link>
         </div>
 
-        {/* 1. Large Heroic Editorial Feature: Mithaq Legal */}
-        {mithaq && (
+        {/* 1. Large Heroic Editorial Feature: Sakina Mental Health */}
+        {sakina && (
           <div className="group shadow-md relative rounded-2xl border border-border/60 bg-surface/40 hover:bg-surface/70 transition-all duration-300 overflow-hidden p-6 sm:p-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               <div className="lg:col-span-5 space-y-6">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="px-3 py-1 rounded-full text-xs font-mono bg-accent-dim text-accent border border-accent/30 font-medium">
+                    {sakina.classification.label[locale]}
+                  </span>
+                  <span className="px-3 py-1 rounded-full text-xs font-mono bg-surface border border-border/60 text-muted">
+                    {sakina.sector.label[locale]}
+                  </span>
+                </div>
+
+                <div className="space-y-2">
+                  <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground group-hover:text-accent transition-colors">
+                    {sakina.title[locale]}
+                  </h3>
+                  <p className="text-sm font-mono text-muted">
+                    {sakina.subtitle[locale]}
+                  </p>
+                </div>
+
+                <p className="text-sm text-muted leading-relaxed">
+                  {sakina.summary[locale]}
+                </p>
+
+                <div className="flex flex-wrap items-center gap-4 pt-2">
+                  <Link
+                    href={`/${locale}/work/${sakina.slug}`}
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-foreground text-background text-xs font-semibold hover:bg-accent hover:text-accent-foreground transition-all"
+                  >
+                    <span>{t.work.viewCaseStudy}</span>
+                    <ArrowUpRight className="w-4 h-4" />
+                  </Link>
+
+                  {sakina.liveUrl && (
+                    <a
+                      href={sakina.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-mono text-muted hover:text-foreground transition-colors"
+                    >
+                      <span>{isArabic ? 'استعرض النموذج' : 'View Project Demo'}</span>
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  )}
+                </div>
+              </div>
+
+              {/* Large Visual Mockup */}
+              <div className="lg:col-span-7 relative">
+                <Link
+                  href={`/${locale}/work/${sakina.slug}`}
+                  className="block relative aspect-[16/10] rounded-xl overflow-hidden border border-border/70 shadow-2xl group-hover:border-accent/40 transition-colors bg-surface-elevated"
+                >
+                  <Image
+                    src={sakina.previewImage}
+                    alt={sakina.title[locale]}
+                    fill
+                    unoptimized
+                    className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
+                    sizes="(max-width: 1024px) 100vw, 60vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent opacity-60" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* 2. Asymmetric Two-Column Showcase: Mithaq Legal */}
+        {mithaq && (
+          <div className="group shadow-md relative rounded-2xl border border-border/60 bg-surface/40 hover:bg-surface/70 transition-all duration-300 overflow-hidden p-6 sm:p-10">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+              {/* Visual Preview */}
+              <div className="lg:col-span-7 order-2 lg:order-1 relative">
+                <Link
+                  href={`/${locale}/work/${mithaq.slug}`}
+                  className="block relative aspect-[16/10] rounded-xl overflow-hidden border border-border/70 shadow-2xl group-hover:border-accent/40 transition-colors bg-surface-elevated"
+                >
+                  <Image
+                    src={mithaq.previewImage}
+                    alt={mithaq.title[locale]}
+                    fill
+                    unoptimized
+                    className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
+                    sizes="(max-width: 1024px) 100vw, 60vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent opacity-60" />
+                </Link>
+              </div>
+
+              {/* Text Info */}
+              <div className="lg:col-span-5 order-1 lg:order-2 space-y-6">
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="px-3 py-1 rounded-full text-xs font-mono bg-accent-dim text-accent border border-accent/30 font-medium">
                     {mithaq.classification.label[locale]}
@@ -98,52 +189,16 @@ export default function FeaturedWork({ locale }: FeaturedWorkProps) {
                   )}
                 </div>
               </div>
-
-              {/* Large Visual Mockup */}
-              <div className="lg:col-span-7 relative">
-                <Link
-                  href={`/${locale}/work/${mithaq.slug}`}
-                  className="block relative aspect-[16/10] rounded-xl overflow-hidden border border-border/70 shadow-2xl group-hover:border-accent/40 transition-colors bg-surface-elevated"
-                >
-                  <Image
-                    src={mithaq.previewImage}
-                    alt={mithaq.title[locale]}
-                    fill
-                    unoptimized
-                    className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
-                    sizes="(max-width: 1024px) 100vw, 60vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent opacity-60" />
-                </Link>
-              </div>
             </div>
           </div>
         )}
 
-        {/* 2. Asymmetric Two-Column Showcase: Al Awad Solutions */}
+        {/* 3. Asymmetric Two-Column Showcase: Al Awad Solutions */}
         {alawad && (
           <div className="group shadow-md relative rounded-2xl border border-border/60 bg-surface/40 hover:bg-surface/70 transition-all duration-300 overflow-hidden p-6 sm:p-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-              {/* Visual Preview */}
-              <div className="lg:col-span-7 order-2 lg:order-1 relative">
-                <Link
-                  href={`/${locale}/work/${alawad.slug}`}
-                  className="block relative aspect-[16/10] rounded-xl overflow-hidden border border-border/70 shadow-2xl group-hover:border-accent/40 transition-colors bg-surface-elevated"
-                >
-                  <Image
-                    src={alawad.previewImage}
-                    alt={alawad.title[locale]}
-                    fill
-                    unoptimized
-                    className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
-                    sizes="(max-width: 1024px) 100vw, 60vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent opacity-60" />
-                </Link>
-              </div>
-
               {/* Text Info */}
-              <div className="lg:col-span-5 order-1 lg:order-2 space-y-6">
+              <div className="lg:col-span-5 space-y-6">
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="px-3 py-1 rounded-full text-xs font-mono bg-surface border border-border/80 text-foreground/90 font-medium">
                     {alawad.classification.label[locale]}
@@ -187,6 +242,24 @@ export default function FeaturedWork({ locale }: FeaturedWorkProps) {
                     </a>
                   )}
                 </div>
+              </div>
+
+              {/* Visual Preview */}
+              <div className="lg:col-span-7 relative">
+                <Link
+                  href={`/${locale}/work/${alawad.slug}`}
+                  className="block relative aspect-[16/10] rounded-xl overflow-hidden border border-border/70 shadow-2xl group-hover:border-accent/40 transition-colors bg-surface-elevated"
+                >
+                  <Image
+                    src={alawad.previewImage}
+                    alt={alawad.title[locale]}
+                    fill
+                    unoptimized
+                    className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.02]"
+                    sizes="(max-width: 1024px) 100vw, 60vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/40 via-transparent to-transparent opacity-60" />
+                </Link>
               </div>
             </div>
           </div>
