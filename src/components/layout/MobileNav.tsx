@@ -51,10 +51,11 @@ export default function MobileNav({ isOpen, onClose, locale }: MobileNavProps) {
   if (!isOpen) return null;
 
   const navLinks = [
-    { href: `/${locale}/work`, label: t.nav.work, num: '01' },
-    { href: `/${locale}/services`, label: t.nav.services, num: '02' },
-    { href: `/${locale}/about`, label: t.nav.about, num: '03' },
-    { href: `/${locale}/contact`, label: t.nav.contact, num: '04' },
+    { href: `/${locale}/`, label: t.nav.home, num: '01' },
+    { href: `/${locale}/work`, label: t.nav.work, num: '02' },
+    { href: `/${locale}/services`, label: t.nav.services, num: '03' },
+    { href: `/${locale}/about`, label: t.nav.about, num: '04' },
+    { href: `/${locale}/contact`, label: t.nav.contact, num: '05' },
   ];
 
   return (

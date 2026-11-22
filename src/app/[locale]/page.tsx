@@ -19,7 +19,7 @@ export default function HomePage({
   return (
     <>
       <Hero locale={locale} />
-      <Credibility locale={locale} />
+      {/* <Credibility locale={locale} /> */}
       <FeaturedWork locale={locale} />
       <ServicesOverview locale={locale} />
       <Methodology locale={locale} />
