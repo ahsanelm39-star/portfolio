@@ -6,6 +6,7 @@ export const TRANSLATIONS = {
       positioning: 'تصميم وتطوير مواقع ترتكز على نمو الأعمال',
     },
     nav: {
+      home: 'الرئيسية',
       work: 'الأعمال المختارة',
       services: 'الخدمات',
       about: 'عن أحمد',
@@ -268,6 +269,7 @@ export const TRANSLATIONS = {
       positioning: 'Business-Focused Website Design & Development',
     },
     nav: {
+      home: 'Home',
       work: 'Selected Work',
       services: 'Services',
       about: 'About',

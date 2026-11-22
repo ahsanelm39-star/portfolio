@@ -38,6 +38,7 @@ export default function Navbar({ locale }: NavbarProps) {
   }, []);
 
   const navLinks = [
+    { href: `/${locale}/`, label: t.nav.home },
     { href: `/${locale}/work`, label: t.nav.work },
     { href: `/${locale}/services`, label: t.nav.services },
     { href: `/${locale}/about`, label: t.nav.about },

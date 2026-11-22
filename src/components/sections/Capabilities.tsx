@@ -23,9 +23,9 @@ export default function Capabilities({ locale }: CapabilitiesProps) {
 
   const visualTech = [
     { name: 'Webflow', desc: isArabic ? 'مواقع بصرية متقدمة مع لوحة تحكم سهلة للعميل' : 'High-end visual builds with client CMS autonomy' },
-    { name: 'Framer', desc: isArabic ? 'إطلاق سريع وتفاعل بصري حديث للشركات الناشئة' : 'Rapid deployment with slick interactive aesthetics' },
+    // { name: 'Framer', desc: isArabic ? 'إطلاق سريع وتفاعل بصري حديث للشركات الناشئة' : 'Rapid deployment with slick interactive aesthetics' },
     { name: 'GoHighLevel', desc: isArabic ? 'صفحات هبوط تسويقية متكاملة مع مسارات إدارة العملاء' : 'Marketing funnels tied directly into CRM pipelines' },
-    { name: 'Wix Studio', desc: isArabic ? 'مواقع تجارية مرنة لخدمة الأنشطة المحلية' : 'Flexible commercial platforms for local businesses' },
+    // { name: 'Wix Studio', desc: isArabic ? 'مواقع تجارية مرنة لخدمة الأنشطة المحلية' : 'Flexible commercial platforms for local businesses' },
   ];
 
   return (
@@ -90,7 +90,7 @@ export default function Capabilities({ locale }: CapabilitiesProps) {
                   {t.capabilities.visualTitle}
                 </h3>
                 <span className="text-xs font-mono text-muted">
-                  Webflow · Framer · GoHighLevel · Wix Studio
+                  Webflow . GoHighLevel
                 </span>
               </div>
             </div>

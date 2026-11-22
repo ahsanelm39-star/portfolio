@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowUpRight, CheckCircle2 } from 'lucide-react';
+import { ArrowUpRight, CheckCircle2, Download, Github } from 'lucide-react';
 import { Locale } from '@/lib/types';
 import { TRANSLATIONS } from '@/data/translations';
 
@@ -85,7 +85,38 @@ export default function AboutOverview({ locale }: AboutOverviewProps) {
                 <span className="text-muted">{isArabic ? 'شريك أبيض' : 'White-Label'}</span>
               </div>
             </div>
-
+            {/* CV Download & Social Links */}
+            <div className="flex flex-wrap items-center gap-3 pt-2">
+              <a
+                href="/documents/Ahmed_Mohamed_Hasan_CV_EN.pdf"
+                download="Ahmed_Mohamed_Hasan_CV_EN.pdf"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-foreground text-background text-xs font-semibold hover:bg-accent hover:text-accent-foreground transition-all"
+                aria-label={isArabic ? 'تحميل السيرة الذاتية' : 'Download CV'}
+              >
+                <Download className="w-3.5 h-3.5" />
+                <span>{isArabic ? 'تحميل السيرة الذاتية' : 'Download CV'}</span>
+              </a>
+              <a
+                href="https://github.com/ahsanelm39-star"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub Profile"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-border/70 bg-surface/60 text-foreground/80 text-xs font-semibold hover:border-accent/50 hover:text-accent transition-all"
+              >
+                <Github className="w-3.5 h-3.5" />
+                <span>GitHub</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ahmed-mohame-843909439"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn Profile"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-border/70 bg-surface/60 text-foreground/80 text-xs font-semibold hover:border-accent/50 hover:text-accent transition-all"
+              >
+                <ArrowUpRight className="w-3.5 h-3.5" />
+                <span>LinkedIn</span>
+              </a>
+            </div>
             <div className="pt-2">
               <Link
                 href={`/${locale}/about`}
